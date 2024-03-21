@@ -21,15 +21,16 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        // if (instance == null)
+        // {
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        // }
+        // else
+        // {
+        //     Debug.Log("Duplicate GameManager found, destroying");
+        //     Destroy(gameObject);
+        // }
     }
     #endregion
 
@@ -59,13 +60,17 @@ public class GameManager : MonoBehaviour
 
     Book[] books = {
         new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", "meow meow meow", Color.red),
-        new Book("Pride and Prejufish", "Jane Austail", "A", "bloop bloop bloop", Color.blue)
+        new Book("Pride and Prejufish", "Jane Austail", "A", "bloop bloop bloop", Color.blue),
+        new Book("A Tale of Two Squirrels", "Charles Dickensquirrel", "D", "*blank stare*", Color.green),
     };
 
     [HideInInspector]
     public Book currentBook;
 
     public int[] levelScores = { 0, 5, 15, 30 };
+
+    public GameObject tutorial1;
+    public GameObject tutorial2;
     #endregion
 
     #region Scene Management
@@ -120,6 +125,11 @@ public class GameManager : MonoBehaviour
     public void GetNewBook() {
         if (currentBook != null) return;
 
+        if (tutorial1.activeSelf) {
+            tutorial1.SetActive(false);
+            tutorial2.SetActive(true);
+        }
+
         int bookIndex = Random.Range(0, books.Length);
         currentBook = books[bookIndex];
 
@@ -130,6 +140,10 @@ public class GameManager : MonoBehaviour
 
     public void DropBook() {
         if (currentBook == null) return;
+
+        if (tutorial2.activeSelf) {
+            tutorial2.SetActive(false);
+        }
 
         player.GetComponent<PlayerController>().DropBook();
         currentBook = null;
