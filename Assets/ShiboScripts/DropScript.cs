@@ -32,8 +32,14 @@ public class DropScript : MonoBehaviour, IDropHandler
                 }
             }
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            gameManager.ExitMiniGame();
+            StartCoroutine(EndScene());
         }
+    }
+
+    IEnumerator EndScene() {
+        yield return new WaitForSeconds(3f);
+        gameManager.ExitMiniGame();
+        gameManager.AddScore(1);
     }
 }
 

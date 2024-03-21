@@ -75,11 +75,17 @@ public class UIScript : MonoBehaviour
             {
                 dialogueCanvas.sortingOrder = 999;
             }
-            gameManager.ExitMiniGame();
+            StartCoroutine(EndScene());
         }
         else
         {
             Debug.LogWarning("Canvas not found in the scene. Dialogue prefab not instantiated.");
         }
+    }
+    
+    IEnumerator EndScene() {
+        yield return new WaitForSeconds(3f);
+        gameManager.ExitMiniGame();
+        gameManager.AddScore(1);
     }
 }
