@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigamePrinter.unity
     guid: 7974448e2de71438db6aa4e3a3270722
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: ac2f4341e77bb415c83504fd1f9d4ef9
   m_configObjects: {}
