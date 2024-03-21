@@ -17,6 +17,12 @@ public class UIScript : MonoBehaviour
     private List<string> userInputList = new List<string>();
     private int currentPromptIndex = 0;
 
+    GameManager gameManager;
+
+    void Awake() {
+        gameManager = GameManager.Instance;
+    }
+
     private void Start()
     {
         ShowNextPrompt();
@@ -69,6 +75,7 @@ public class UIScript : MonoBehaviour
             {
                 dialogueCanvas.sortingOrder = 999;
             }
+            gameManager.ExitMiniGame();
         }
         else
         {

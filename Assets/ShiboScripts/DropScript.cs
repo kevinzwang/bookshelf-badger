@@ -7,7 +7,12 @@ public class DropScript : MonoBehaviour, IDropHandler
 {
     public string slotIdentifier;
     public GameObject dialoguePrefab;
-    public Transform canvasTransform; // Reference to the Canvas Transform
+    public Transform canvasTransform;
+    GameManager gameManager;
+
+    void Awake() {
+        gameManager = GameManager.Instance;
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -27,6 +32,7 @@ public class DropScript : MonoBehaviour, IDropHandler
                 }
             }
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            gameManager.ExitMiniGame();
         }
     }
 }
