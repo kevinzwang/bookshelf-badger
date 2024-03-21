@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 804556efe691a4c9ca9c54cc5ccea40c
+  - enabled: 1
+    path: Assets/Scenes/MinigameCard.unity
+    guid: 6a6563bbc14164ec3a07652148343cca
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 5f9132eb53a154a7db3e69c4242edaa6
+  - enabled: 1
+    path: Assets/Scenes/MinigamePrinter.unity
+    guid: 7974448e2de71438db6aa4e3a3270722
   m_configObjects: {}
