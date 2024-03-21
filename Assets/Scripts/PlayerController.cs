@@ -9,14 +9,17 @@ public class PlayerController : MonoBehaviour
     float playerSpeed = 5f;
 
     Rigidbody2D playerRigidbody;
+    SpriteRenderer playerSprite;
+    GameManager gameManager;
 
     float xAxis;
     float yAxis;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        playerSprite = GetComponent<SpriteRenderer>();
+        gameManager = GameManager.Instance;
     }
 
     // Update is called once per frame
@@ -31,6 +34,22 @@ public class PlayerController : MonoBehaviour
     void movePlayer()
     {
         Vector2 movementVector = new Vector2(xAxis, yAxis);
-        playerRigidbody.velocity = movementVector * playerSpeed;
+        playerRigidbody.velocity = movementVector.normalized * playerSpeed;
+    }
+
+
+    public void HoldBook(GameManager.Book book)
+    {
+        playerSprite.color = book.color;
+    }
+
+    public void DropBook()
+    {
+        playerSprite.color = new Color(1, 0.755348f, 0.495283f);
+    }
+
+    void OnMouseDown()
+    {
+        gameManager.OpenBook();
     }
 }
