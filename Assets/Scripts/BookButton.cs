@@ -10,6 +10,7 @@ public class BookButton : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         Debug.Log(gameManager);
+        Debug.Log("BookButton Awake");
     }
 
     public void CloseBook() {
