@@ -16,11 +16,14 @@ public class PlayerController : MonoBehaviour
     float yAxis;
 
     Animator anim;
+    SpriteRenderer currBook;
 
     void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerSprite = GetComponent<SpriteRenderer>();
+
+        currBook = gameObject.transform.GetChild(0).GetComponentInChildren<SpriteRenderer>();
         gameManager = GameManager.Instance;
         anim = GetComponent<Animator>();
     }
@@ -53,12 +56,14 @@ public class PlayerController : MonoBehaviour
     public void HoldBook(GameManager.Book book)
     {
         anim.SetBool("hasBook", true);
-        // playerSprite.color = book.color;
+        currBook.enabled = true;
+        currBook.color = book.color;
     }
 
     public void DropBook()
     {
         anim.SetBool("hasBook", false);
+        currBook.enabled = false;
         // playerSprite.color = new Color(1, 0.755348f, 0.495283f);
     }
 
