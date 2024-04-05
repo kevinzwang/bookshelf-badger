@@ -531,11 +531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1779321869673999220, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2829634484474812895, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5556860988034442500, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
       propertyPath: canvas
