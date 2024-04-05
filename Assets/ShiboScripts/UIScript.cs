@@ -77,10 +77,6 @@ public class UIScript : MonoBehaviour
             }
             StartCoroutine(EndScene());
         }
-        else
-        {
-            Debug.LogWarning("Canvas not found in the scene. Dialogue prefab not instantiated.");
-        }
     }
     
     IEnumerator EndScene() {
