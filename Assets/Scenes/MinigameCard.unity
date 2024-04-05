@@ -511,11 +511,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1074550595}
     m_Modifications:
+    - target: {fileID: 596017854933123587, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
+      propertyPath: m_text
+      value: 'Chester Cheetah
+
+
+        909 North Safari Street
+
+
+        Height:
+        4 Feet
+
+
+        Weight: 120lbs'
+      objectReference: {fileID: 0}
     - target: {fileID: 1779321869673999220, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
       propertyPath: m_Name
       value: ID3
       objectReference: {fileID: 0}
     - target: {fileID: 1779321869673999220, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2829634484474812895, guid: 21afebf2a2a5c7a4f9d2d1eb4bcabbb4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
