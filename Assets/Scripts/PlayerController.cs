@@ -18,8 +18,28 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     SpriteRenderer currBook;
 
+    private static PlayerController instance;
+
+    public static PlayerController Instance {
+        get {
+            if (instance == null) {
+                instance = FindObjectOfType<PlayerController>();
+            }
+            return instance;
+        }
+    }
+
     void Awake()
     {
+        if (instance == null) {
+            instance = this;
+        } else {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerSprite = GetComponent<SpriteRenderer>();
 

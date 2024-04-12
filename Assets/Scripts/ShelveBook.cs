@@ -12,6 +12,8 @@ public class ShelveBook : MonoBehaviour
     }
 
     void OnMouseDown() {
+        gameManager.AddScore(1);
+        gameManager.DropBook();
         gameManager.ExitMiniGame();
     }
 }

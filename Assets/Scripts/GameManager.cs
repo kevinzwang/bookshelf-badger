@@ -83,19 +83,15 @@ public class GameManager : MonoBehaviour
     }
 
     public void EnterMiniGame(string sceneName) {
-        var asyncOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        asyncOp.completed += (AsyncOperation op) => {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-        };
+        Debug.Log("Entering minigame: " + sceneName);
+        SceneManager.LoadScene(sceneName);
+        player.SetActive(false);
     }
 
     public void ExitMiniGame() {
         Debug.Log("Exiting minigame");
-        if (SceneManager.loadedSceneCount > 1) {
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
-        } else {
-            Debug.LogError("No minigame to exit");
-        }
+        SceneManager.LoadScene("MapScene");
+        player.SetActive(true);
     }
     #endregion
 
@@ -139,14 +135,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void DropBook() {
+        Debug.Log("Dropping book");
         if (currentBook == null) return;
 
-        if (tutorial2.activeSelf) {
-            tutorial2.SetActive(false);
-        }
+        // if (tutorial2.activeSelf) {
+        //     tutorial2.SetActive(false);
+        // }
 
         player.GetComponent<PlayerController>().DropBook();
         currentBook = null;
+        Debug.Log("End drop book");
     }
 
     public void OpenBook() {

@@ -18,8 +18,7 @@ public class ShelfInteract : MonoBehaviour
         if (!interactive.interactEnabled || gameManager.currentBook == null) return;
 
         if (gameManager.currentBook.authorLetter == letter) {
-            gameManager.DropBook();
-            gameManager.AddScore(1);
+            gameManager.EnterMiniGame("MinigameShelving");
         }
     }
 }
