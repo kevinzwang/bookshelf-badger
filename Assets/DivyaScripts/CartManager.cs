@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class InkController : MonoBehaviour
 {
-    //public GameObject fullCart;
+    public GameObject magCheck;
+    public GameObject yellowCheck;
+    public GameObject cyanCheck;
+    public GameObject keyCheck;
 
     // Start is called before the first frame update
     void Start()
@@ -20,25 +23,34 @@ public class InkController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "fullMagenta" && gameObject.name == "newMagenta"){
-            GameObject.Find("emptyMagenta").SetActive(false);
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.name == "cartridgeSlot-magenta" && gameObject.name == "cartridge-magenta"){
+            Debug.Log("hi");
+            magCheck.SetActive(true);
+            GameObject.Find("redX_magenta").SetActive(false);
             gameObject.SetActive(false);
         }
 
-        if (collision.gameObject.name == "fullYellow" && gameObject.name == "newYellow"){
-            GameObject.Find("emptyYellow").SetActive(false);
+        if (collision.gameObject.name == "cartridgeSlot-yellow" && gameObject.name == "cartridge-yellow"){
+            yellowCheck.SetActive(true);
+            GameObject.Find("redX_yellow").SetActive(false);
             gameObject.SetActive(false);
         }
 
-        if (collision.gameObject.name == "fullCyan" && gameObject.name == "newCyan"){
-            GameObject.Find("emptyCyan").SetActive(false);
+        if (collision.gameObject.name == "cartridgeSlot-cyan" && gameObject.name == "cartridge-cyan"){
+            Debug.Log("hi");
+            cyanCheck.SetActive(true);
+            GameObject.Find("redX_cyan").SetActive(false);
             gameObject.SetActive(false);
         }
 
-        if (collision.gameObject.name == "fullBlack" && gameObject.name == "newBlack"){
-            GameObject.Find("emptyBlack").SetActive(false);
+        if (collision.gameObject.name == "cartridgeSlot-key" && gameObject.name == "cartridge-key"){
+            keyCheck.SetActive(true);
+            GameObject.Find("redX_key").SetActive(false);
             gameObject.SetActive(false);
         }
+
+        
 
     }
 }

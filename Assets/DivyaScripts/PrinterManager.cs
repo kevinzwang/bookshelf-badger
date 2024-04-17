@@ -34,3 +34,20 @@ public class PrinterManager : MonoBehaviour
 
     
 }
+
+
+// cannot move beyond certain area or gets returned to og spot
+// cannot be on top of printer
+// cannot move anything except moveable items
+// how to add animation
+// glowing green button to play animation
+// red and green bunny to indicate correct reset password
+// glowing paper
+// why is animation printer blurry
+// fix background password
+// how to do animation
+// randomize problems
+// randomize cartidge locations and maybe other items as well?
+// button size?
+// code password
+// move dragged object by changing sortimg order - if collision object => sorting order, set the sorting order to collision object sortung order + 1
