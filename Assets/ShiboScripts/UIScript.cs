@@ -19,6 +19,8 @@ public class UIScript : MonoBehaviour
     public GameObject imageborder;
 
     public GameObject InText;
+    
+    public GameObject dialoguePrefab;
 
     void Start()
     {
@@ -54,5 +56,6 @@ public class UIScript : MonoBehaviour
         image.SetActive(false);
         imageborder.SetActive(false);
         InText.SetActive(false);
+        dialoguePrefab.SetActive(true);
     }
 }

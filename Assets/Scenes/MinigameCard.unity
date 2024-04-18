@@ -15702,7 +15702,7 @@ MonoBehaviour:
   - {fileID: 465226043}
   - {fileID: 391363668}
   - {fileID: 38903019}
-  FakeIDSToEnsable:
+  FakeIDSToEnable:
   - {fileID: 360220086}
   - {fileID: 557755552}
   - {fileID: 1493016577}

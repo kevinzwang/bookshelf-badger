@@ -27,7 +27,7 @@ public class CheckScript : MonoBehaviour
             inputScreen.SetActive(true);
             inputScreenInstantiated = true;
 
-            Instantiate(dialoguePrefab);
+            //dialoguePrefab.SetActive(true);
             dialogueInstatiated = true;
         
         }
