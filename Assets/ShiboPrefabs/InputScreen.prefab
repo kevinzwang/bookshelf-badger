@@ -206,7 +206,7 @@ MonoBehaviour:
   input: {fileID: 4422097924487527554}
   promptText: {fileID: 4474262384391781191}
   button: {fileID: 5008905636871342100}
-  dialoguePrefab: {fileID: 992649859694677911, guid: 182912cfb2a65944cb0ac5da828fae0f, type: 3}
+  dialoguePrefab: {fileID: 7493155008361913867, guid: cad46524a44a3d642982d257353a345a, type: 3}
 --- !u!1 &3122401188839495140
 GameObject:
   m_ObjectHideFlags: 0

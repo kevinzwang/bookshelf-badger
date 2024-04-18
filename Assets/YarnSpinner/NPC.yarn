@@ -10,3 +10,89 @@ NPC: Hello! Are you Berry the Badger? I need to register a new library card can 
 -> What type of animal are you????
     ...
 ===
+
+title: Reject
+tags:
+position: -17,84
+---
+Evil NPC: Dang, you caught me...
+-> I can't believe you tried to trick me. I'm calling the police...
+    Evil NPC: Not if I get away first! HAHAHAHAH!!!!!
+-> I'm going to have to ask you to kindly leave.
+    Evil NPC: Make me...
+-> Who are you really...
+    Evil NPC: I AM EISENBERG, THE GREATEST BOOK THIEF OF MODERN DAY!!!
+Berry: ...
+Berry: Is this a prank?
+Berry: GET OUTTTTTTTTTTT!!!!!!!
+===
+
+title: Approve
+tags:
+position: -12,250
+---
+Berry the Badger: Congratulations on your new card! Welcome to the library!!!!!!!
+===
+
+title: NPC1Real
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love horror books!
+Berry the Badger: Yay me too! What's your favorite book?
+NPC: Hmmm favorite book? It's gotta be Harry Otter and the Chamber of Fish by J. K. Roly-Poly!
+Berry the Badger: Good choice!
+===
+
+title: NPC1Fake
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love science fiction books!
+Berry the Badger: Interesting... What's your favorite book?
+NPC: Oh it's gotta be The Fault in Our Starfish by Jelly Green!
+Berry the Badger: Are you sure its not Harry Otter and the Chamber of Fish by J. K. Roly-Poly...
+NPC: That's what I meant haha...
+===
+
+title: NPC2Real
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love romance books!
+Berry the Badger: Yay me too! What's your favorite book?
+NPC: Hmmm favorite book? It's gotta be Moby Duck by Herman Mallard!
+Berry the Badger: Good choice!
+===
+
+title: NPC2Fake
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love thriller books!
+Berry the Badger: Interesting... What's your favorite book?
+NPC: Oh it's gotta be Ant Gone by Slothocles!
+Berry the Badger: Are you sure its not Moby Duck...
+NPC: That's what I meant haha...
+===
+
+title: NPC3Real
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love fantasy books!
+Berry the Badger: Yay me too! What's your favorite book?
+NPC: Hmmm favorite book? It's gotta be The Wonderful Wizard of Paws by L. Frank Clawm!
+Berry the Badger: Good choice!
+===
+
+title: NPC3Fake
+tags:
+---
+Berry the Badger: Soooo what kind of books do you like?
+NPC: Oh great question, I love thriller books!
+Berry the Badger: Interesting... What's your favorite book?
+NPC: Oh it's gotta be Raccooneo and Jackalette by Walrus Shakespeare!
+Berry the Badger: Are you sure its not The Wonderful Wizard of Paws by L. Frank Clawm...
+NPC: That's what I meant haha...
+===

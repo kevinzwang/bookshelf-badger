@@ -4,14 +4,17 @@ using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DraggableObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DraggableObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerClickHandler
 {
 
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private bool isEnlarged = false;
+    private Vector3 originalScale;
 
     private void Awake() {
+        originalScale = transform.localScale;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
@@ -39,5 +42,18 @@ public class DraggableObject : MonoBehaviour, IPointerDownHandler, IBeginDragHan
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        isEnlarged = !isEnlarged;
+        if (isEnlarged)
+        {
+            transform.localScale = originalScale * 3f;
+        }
+        else
+        {
+            transform.localScale = originalScale;
+        }
     }
 }

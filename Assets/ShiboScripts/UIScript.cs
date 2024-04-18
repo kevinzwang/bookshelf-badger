@@ -7,81 +7,52 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     public TextMeshProUGUI output;
-    public TMP_InputField input;
-    public TextMeshProUGUI promptText;
+    public GameObject returnButton;
 
-    public Button button;
-    public GameObject dialoguePrefab;
+    public List<TMP_InputField> inputFields;
+    public Button saveButton;
 
-    private List<string> prompts = new List<string> { "Name", "Address", "Height", "Weight"};
-    private List<string> userInputList = new List<string>();
-    private int currentPromptIndex = 0;
+    private List<string> prompts = new List<string> { "Name", "DOB", "ID", "Address" };
 
-    GameManager gameManager;
+    public GameObject image;
 
-    void Awake() {
-        gameManager = GameManager.Instance;
+    public GameObject imageborder;
+
+    public GameObject InText;
+
+    void Start()
+    {
+        saveButton.onClick.AddListener(OnSaveButtonClick);
     }
 
-    private void Start()
+    private void OnSaveButtonClick()
     {
-        ShowNextPrompt();
-    }
-
-    public void Button() 
-    {
-        userInputList.Add(input.text);
-
-        currentPromptIndex++;
-
-        if (currentPromptIndex < prompts.Count)
+        List<string> userInputList = new List<string>();
+        foreach (TMP_InputField inputField in inputFields)
         {
-            ShowNextPrompt();
+            userInputList.Add(inputField.text);
         }
-        else
-        {
-            DisplayUserInputs();
-        }
+
+        DisplayUserInputs(userInputList);
     }
 
-    private void ShowNextPrompt()
+    private void DisplayUserInputs(List<string> userInputList)
     {
-        promptText.text = prompts[currentPromptIndex];
-
-        input.text = "";
-    }
-
-    private void DisplayUserInputs()
-    {
-        promptText.text = "";
-
-        string outputText = "New Library Card Registered!:\n";
+        string outputText = "New Library Card Registered!:\n\n";
         for (int i = 0; i < prompts.Count; i++)
         {
             outputText += $"{prompts[i]}: {userInputList[i]}\n";
         }
         output.text = outputText;
 
-        input.gameObject.SetActive(false);
-        button.gameObject.SetActive(false);
-
-        Canvas canvas = FindObjectOfType<Canvas>();
-        if (canvas != null)
+        foreach (TMP_InputField inputField in inputFields)
         {
-            GameObject dialogueInstance = Instantiate(dialoguePrefab, canvas.transform);
-
-            Canvas dialogueCanvas = dialogueInstance.GetComponent<Canvas>();
-            if (dialogueCanvas != null)
-            {
-                dialogueCanvas.sortingOrder = 999;
-            }
-            StartCoroutine(EndScene());
+            inputField.gameObject.SetActive(false);
         }
-    }
-    
-    IEnumerator EndScene() {
-        yield return new WaitForSeconds(3f);
-        gameManager.ExitMiniGame();
-        gameManager.AddScore(1);
+        saveButton.gameObject.SetActive(false);
+        returnButton.SetActive(true);
+        image.SetActive(false);
+        imageborder.SetActive(false);
+        InText.SetActive(false);
     }
 }

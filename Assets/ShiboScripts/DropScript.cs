@@ -8,7 +8,12 @@ public class DropScript : MonoBehaviour, IDropHandler
     public string slotIdentifier;
     public GameObject dialoguePrefab;
     public Transform canvasTransform;
+    public GameObject returnButton;
+    public GameObject anim;
+    public GameObject thisItem;
     GameManager gameManager;
+
+    GameObject id;
 
     void Awake() {
         gameManager = GameManager.Instance;
@@ -23,23 +28,15 @@ public class DropScript : MonoBehaviour, IDropHandler
             if (slotIdentifier == "RejectBin")
             {
                 Debug.Log("Get out now!");
-                GameObject dialogue = Instantiate(dialoguePrefab, canvasTransform);
-                
-                Canvas canvas = dialogue.GetComponent<Canvas>();
-                if (canvas != null)
-                {
-                    canvas.sortingOrder = 999;
-                }
+                dialoguePrefab.SetActive(true);
+                returnButton.SetActive(true);
+                id = GameObject.FindGameObjectWithTag("ID");
+                id.SetActive(false);
+                anim.SetActive(true);
+                thisItem.SetActive(false);
             }
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            StartCoroutine(EndScene());
         }
-    }
-
-    IEnumerator EndScene() {
-        yield return new WaitForSeconds(3f);
-        gameManager.ExitMiniGame();
-        gameManager.AddScore(1);
     }
 }
 

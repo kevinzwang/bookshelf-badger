@@ -23,7 +23,8 @@ public class CheckScript : MonoBehaviour
         if (tog1.isOn && tog2.isOn && tog3.isOn && tog4.isOn && tog5.isOn && !inputScreenInstantiated && !dialogueInstatiated)
         {
             infoScreen.SetActive(false);
-            Instantiate(inputScreen);
+            // Instantiate(inputScreen);
+            inputScreen.SetActive(true);
             inputScreenInstantiated = true;
 
             Instantiate(dialoguePrefab);
