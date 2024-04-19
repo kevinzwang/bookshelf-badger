@@ -467,11 +467,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6627cb48fd53985459e47f4ba0c40542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tog1: {fileID: 1415427400}
-  tog2: {fileID: 1462269981}
-  tog3: {fileID: 983887130}
-  tog4: {fileID: 2060207041}
-  tog5: {fileID: 593227570}
+  togs:
+  - {fileID: 1415427400}
+  - {fileID: 1462269981}
+  - {fileID: 983887130}
+  - {fileID: 2060207041}
+  - {fileID: 593227570}
   infoScreen: {fileID: 40872061}
   inputScreen: {fileID: 663374179}
   dialoguePrefab: {fileID: 556530457}
@@ -2082,11 +2083,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6627cb48fd53985459e47f4ba0c40542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tog1: {fileID: 1675677533}
-  tog2: {fileID: 1240617171}
-  tog3: {fileID: 782742613}
-  tog4: {fileID: 524554733}
-  tog5: {fileID: 654237911}
+  togs:
+  - {fileID: 1675677533}
+  - {fileID: 1240617171}
+  - {fileID: 782742613}
+  - {fileID: 524554733}
+  - {fileID: 654237911}
   infoScreen: {fileID: 239393213}
   inputScreen: {fileID: 447823532}
   dialoguePrefab: {fileID: 556530457}
@@ -13504,11 +13506,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6627cb48fd53985459e47f4ba0c40542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tog1: {fileID: 1490414719}
-  tog2: {fileID: 1413466041}
-  tog3: {fileID: 350684266}
-  tog4: {fileID: 497558539}
-  tog5: {fileID: 1895599667}
+  togs:
+  - {fileID: 1490414719}
+  - {fileID: 1413466041}
+  - {fileID: 350684266}
+  - {fileID: 497558539}
+  - {fileID: 1895599667}
   infoScreen: {fileID: 1589648336}
   inputScreen: {fileID: 1458162251}
   dialoguePrefab: {fileID: 556530457}
@@ -15714,6 +15717,13 @@ MonoBehaviour:
   - {fileID: 1493422677}
   - {fileID: 1199447658}
   - {fileID: 874206500}
+  DialoguesToEnable:
+  - {fileID: 3917714718164804360, guid: d046595266aa19c4dbacdb75f0fc11c8, type: 3}
+  - {fileID: 4325579708634567649, guid: 476c0c369c38355458746efeef45008f, type: 3}
+  - {fileID: 772262349697249627, guid: 0d36e76c8bb29654da299bd7eeab7a7c, type: 3}
+  - {fileID: 6867976658251744959, guid: 1f18f692e976ff248a19faa9707abf33, type: 3}
+  - {fileID: 7445504603069353356, guid: e54379e1251b067429cf0de6f8b0e61b, type: 3}
+  - {fileID: 1500871055871053060, guid: 01b10e9df8a0bc643835de5b804ca1e5, type: 3}
   NPC1Real: {fileID: 3917714718164804360, guid: d046595266aa19c4dbacdb75f0fc11c8, type: 3}
   NPC1Fake: {fileID: 4325579708634567649, guid: 476c0c369c38355458746efeef45008f, type: 3}
   NPC2Real: {fileID: 772262349697249627, guid: 0d36e76c8bb29654da299bd7eeab7a7c, type: 3}

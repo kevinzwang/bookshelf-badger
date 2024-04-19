@@ -8,18 +8,12 @@ public class UIScript : MonoBehaviour
 {
     public TextMeshProUGUI output;
     public GameObject returnButton;
-
-    public List<TMP_InputField> inputFields;
+    public TMP_InputField[] inputFields;
     public Button saveButton;
-
-    private List<string> prompts = new List<string> { "Name", "DOB", "ID", "Address" };
-
+    private string[] prompts = new string[] { "Name", "DOB", "ID", "Address" };
     public GameObject image;
-
     public GameObject imageborder;
-
     public GameObject InText;
-    
     public GameObject dialoguePrefab;
 
     void Start()
@@ -41,7 +35,7 @@ public class UIScript : MonoBehaviour
     private void DisplayUserInputs(List<string> userInputList)
     {
         string outputText = "New Library Card Registered!:\n\n";
-        for (int i = 0; i < prompts.Count; i++)
+        for (int i = 0; i < prompts.Length; i++)
         {
             outputText += $"{prompts[i]}: {userInputList[i]}\n";
         }

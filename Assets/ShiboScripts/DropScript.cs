@@ -15,7 +15,8 @@ public class DropScript : MonoBehaviour, IDropHandler
 
     GameObject id;
 
-    void Awake() {
+    void Awake() 
+    {
         gameManager = GameManager.Instance;
     }
 

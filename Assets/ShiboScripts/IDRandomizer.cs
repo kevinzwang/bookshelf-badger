@@ -9,12 +9,7 @@ public class IDRandomizer : MonoBehaviour
     public GameObject[] FakeIDSToEnable;
     public GameObject[] ScreensToEnable;
     public GameObject[] NPCSToEnable;
-    public GameObject NPC1Real;
-    public GameObject NPC1Fake;
-    public GameObject NPC2Real;
-    public GameObject NPC2Fake;
-    public GameObject NPC3Real;
-    public GameObject NPC3Fake;
+    public GameObject[] DialoguesToEnable;
     int ind;
     int appind;
     int percentage;
@@ -28,10 +23,12 @@ public class IDRandomizer : MonoBehaviour
             GameObject screenToEnable;
             GameObject npcToEnable;
             GameObject objectToEnable;
-            if (percentage >= 0 && percentage < 15) { //All information is wrong
+            if (percentage >= 0 && percentage < 15) 
+            { //All information is wrong
                 ind = Random.Range(0, IDSToEnable.Length);
                 int coinflip = Random.Range(0,2);
-                if (coinflip == 0) {
+                if (coinflip == 0) 
+                {
                     objectToEnable = IDSToEnable[ind];
                 } else {
                     objectToEnable = FakeIDSToEnable[ind];
@@ -44,7 +41,8 @@ public class IDRandomizer : MonoBehaviour
                 screenToEnable.SetActive(true);
                 objectToEnable.SetActive(true);
             }
-            if (percentage >= 15 && percentage < 31) { //Same application and npc but wrong ID
+            if (percentage >= 15 && percentage < 31) 
+            { //Same application and npc but wrong ID
                 ind = Random.Range(0, IDSToEnable.Length);
                 objectToEnable = FakeIDSToEnable[ind];  
                 appind = Random.Range(0, IDSToEnable.Length);
@@ -54,7 +52,8 @@ public class IDRandomizer : MonoBehaviour
                 screenToEnable.SetActive(true);
                 objectToEnable.SetActive(true);
             } 
-            if (percentage >= 31 && percentage < 46) { //Same application and ID but wrong NPC
+            if (percentage >= 31 && percentage < 46) 
+            { //Same application and ID but wrong NPC
                 appind = Random.Range(0, IDSToEnable.Length);
                 objectToEnable = IDSToEnable[appind];
                 screenToEnable = ScreensToEnable[appind];
@@ -64,7 +63,8 @@ public class IDRandomizer : MonoBehaviour
                 screenToEnable.SetActive(true);
                 objectToEnable.SetActive(true);
             } 
-            if (percentage >= 46 && percentage < 100) { //Real npc
+            if (percentage >= 46 && percentage < 100) 
+            { //Real npc
                 appind = Random.Range(0, IDSToEnable.Length);
                 screenToEnable = ScreensToEnable[appind];
                 npcToEnable = NPCSToEnable[appind];
@@ -76,27 +76,34 @@ public class IDRandomizer : MonoBehaviour
         }
     }
     
-    public void ActivateDialogue() {
+    public void ActivateDialogue() 
+    {
         int i = Random.Range(0, 2);
-        if (appind == 0) {
-            if (i == 0) {
-                Instantiate(NPC1Real);
+        if (appind == 0) 
+        {
+            if (i == 0) 
+            {
+                Instantiate(DialoguesToEnable[0]);
             } else {
-                Instantiate(NPC1Fake);
+                Instantiate(DialoguesToEnable[1]);
             }
         }
-        if (appind == 1) {
-            if (i == 0) {
-                Instantiate(NPC2Real);
+        if (appind == 1) 
+        {
+            if (i == 0) 
+            {
+                Instantiate(DialoguesToEnable[2]);
             } else {
-                Instantiate(NPC2Fake);
+                Instantiate(DialoguesToEnable[3]);
             }
         }
-        if (appind == 2) {
-            if (i == 0) {
-                Instantiate(NPC3Real);
+        if (appind == 2) 
+        {
+            if (i == 0) 
+            {
+                Instantiate(DialoguesToEnable[4]);
             } else {
-                Instantiate(NPC3Fake);
+                Instantiate(DialoguesToEnable[5]);
             }
         }
     }

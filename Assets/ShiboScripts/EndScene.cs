@@ -7,11 +7,13 @@ public class EndScene : MonoBehaviour
 {
     GameManager gameManager;
 
-    void Awake() {
+    void Awake() 
+    {
         gameManager = GameManager.Instance;
     }
 
-    public void Return() {
+    public void Return() 
+    {
         gameManager.ExitMiniGame();
         gameManager.AddScore(1);
     }

@@ -13,7 +13,8 @@ public class DraggableObject : MonoBehaviour, IPointerDownHandler, IBeginDragHan
     private bool isEnlarged = false;
     private Vector3 originalScale;
 
-    private void Awake() {
+    private void Awake() 
+    {
         originalScale = transform.localScale;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
