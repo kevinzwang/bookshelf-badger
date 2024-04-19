@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RejectDialogue
   - ID
+  - movable
   layers:
   - Default
   - TransparentFX

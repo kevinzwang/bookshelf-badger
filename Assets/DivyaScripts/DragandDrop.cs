@@ -5,9 +5,8 @@ using UnityEngine.EventSystems;
 
 public class DragandDrop : MonoBehaviour
 {
-
     public GameObject selectedObject;
-    Vector3 offset;
+    private Vector3 offset;
 
     void Update()
     {
@@ -19,14 +18,12 @@ public class DragandDrop : MonoBehaviour
 
             if (targetObject)
             {
-                selectedObject = targetObject.transform.gameObject;
+                selectedObject = targetObject.gameObject;
                 offset = selectedObject.transform.position - mousePosition;
-
             }
-
         }
 
-        if (selectedObject)
+        if (selectedObject && selectedObject.CompareTag("movable"))
         {
             selectedObject.transform.position = mousePosition + offset;
         }
@@ -37,5 +34,15 @@ public class DragandDrop : MonoBehaviour
         }
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (selectedObject)
+        {
+            // Get the sorting order of the collided object's sprite renderer
+            int sortingOrder = collision.gameObject.GetComponent<SpriteRenderer>().sortingOrder;
+
+            // Increase the sorting order by 1 to move the selected object above the collided object
+            selectedObject.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder + 1;
+        }
+    }
 }
