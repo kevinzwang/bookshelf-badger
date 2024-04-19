@@ -4,19 +4,30 @@ using UnityEngine;
 
 public class CartInteract : MonoBehaviour
 {
-    Interactive interactive;
     GameManager gameManager;
+    SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         gameManager = GameManager.Instance;
-        interactive = gameObject.GetComponent<Interactive>();
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
     }
 
+    void OnMouseEnter() {
+        if (gameManager.currentBook == null) {
+            spriteRenderer.color = Color.green;
+        } else {
+            spriteRenderer.color = Color.red;
+        }
+    }
+
+    void OnMouseExit() {
+        spriteRenderer.color = Color.white;
+    }
 
     void OnMouseDown() {
-        if (!interactive.interactEnabled) return;
-
-        gameManager.GetNewBook();
+        if (gameManager.currentBook == null) {
+            gameManager.GetNewBook();
+        }
     }
 }

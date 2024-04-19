@@ -1,21 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MinigameInteract : MonoBehaviour
 {
-    public string minigame;
-    Interactive interactive;
-
-    private GameManager gameManager;
+    GameManager gameManager;
+    SpriteRenderer spriteRenderer;
+    public string sceneName;
 
     private void Awake()
     {
         gameManager = GameManager.Instance;
-        interactive = gameObject.GetComponent<Interactive>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    
+
+    void OnMouseEnter() {
+        spriteRenderer.color = Color.green;
+    }
+
+    void OnMouseExit() {
+        spriteRenderer.color = Color.white;
     }
 
     void OnMouseDown() {
-        if (!interactive.interactEnabled) return;
-
-        gameManager.EnterMiniGame(minigame);
+        gameManager.EnterMiniGame(sceneName);
     }
 }

@@ -69,10 +69,8 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("DirX", currDir.x);
             anim.SetFloat("DirY", currDir.y);
         }
-        playerRigidbody.velocity = movementVector.normalized * playerSpeed;
 
-        // Set z position so that the player is correctly in front or behind objects on the map
-        // transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+        playerRigidbody.velocity = movementVector.normalized * playerSpeed;
     }
 
 

@@ -46,31 +46,39 @@ public class GameManager : MonoBehaviour
         public string title;
         public string author;
         public string authorLetter;
-        public string text;
         public Color color;
 
-        public Book(string title, string author, string authorLetter, string text, Color color) {
+        public Book(string title, string author, string authorLetter, Color color) {
             this.title = title;
             this.author = author;
             this.authorLetter = authorLetter;
-            this.text = text;
             this.color = color;
         }
     }
 
     Book[] books = {
-        new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", "meow meow meow", Color.red),
-        new Book("Pride and Prejufish", "Jane Austail", "A", "bloop bloop bloop", Color.blue),
-        new Book("A Tale of Two Squirrels", "Charles Dickensquirrel", "D", "*blank stare*", Color.green),
+        new Book("Moby Duck", "Herman Mallard", "M", Color.red),
+        new Book("Pride and Prejufish", "Jane Austail", "A", Color.blue),
+        new Book("A Tale of Two Squirrels", "Charles Dickensquirrel", "D", Color.green),
+        new Book("Ant Gone", "Slothocles", "S", Color.cyan),
+        new Book("The Fault in Our Starfish", "Jelly Green", "G", Color.grey),
+        new Book("The Rabbit", "GRR Tolkien", "T", Color.yellow),
+        new Book("A Tail of Two Kitties", "Charles Chickens", "C", Color.green),
+        new Book("Harry Otter and the Chamber of Fish", "J. K. Roly-Poly", "R", Color.magenta),
+        new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", Color.red),
+        new Book("Raccooneo and Jackalette", "Walrus Shakespeare", "S", Color.blue),
+        new Book("The Wonderful Wizard of Paws", " L. Frank Clawm", "C", Color.green),
+        new Book("War and Fleece", "Leo Toadstoy", "T", Color.yellow)
     };
+    int bookIndex = 0;
 
     [HideInInspector]
     public Book currentBook;
 
     public int[] levelScores = { 0, 5, 15, 30 };
 
-    public GameObject tutorial1;
-    public GameObject tutorial2;
+    // public GameObject tutorial1;
+    // public GameObject tutorial2;
     #endregion
 
     #region Scene Management
@@ -121,13 +129,18 @@ public class GameManager : MonoBehaviour
     public void GetNewBook() {
         if (currentBook != null) return;
 
-        if (tutorial1.activeSelf) {
-            tutorial1.SetActive(false);
-            tutorial2.SetActive(true);
-        }
+        // if (tutorial1.activeSelf) {
+        //     tutorial1.SetActive(false);
+        //     tutorial2.SetActive(true);
+        // }
 
-        int bookIndex = Random.Range(0, books.Length);
         currentBook = books[bookIndex];
+        bookIndex = (bookIndex + 1) % books.Length;
+
+        if (player == null) {
+            Debug.Log("Player is null");
+        }
+        Debug.Log(player);
 
         player.GetComponent<PlayerController>().HoldBook(currentBook);
 
