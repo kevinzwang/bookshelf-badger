@@ -6,7 +6,7 @@ using UnityEngine;
 public class IDRandomizer : MonoBehaviour 
 {
     public GameObject[] IDSToEnable;
-    public GameObject[] FakeIDSToEnsable;
+    public GameObject[] FakeIDSToEnable;
     public GameObject[] ScreensToEnable;
     public GameObject[] NPCSToEnable;
     public GameObject NPC1Real;
@@ -22,6 +22,7 @@ public class IDRandomizer : MonoBehaviour
     void Start()
     {
         percentage = Random.Range(0, 100);
+        Debug.Log("Percent: " + percentage);
         if (IDSToEnable.Length > 0 && ScreensToEnable.Length > 0)
         {
             GameObject screenToEnable;
@@ -29,7 +30,12 @@ public class IDRandomizer : MonoBehaviour
             GameObject objectToEnable;
             if (percentage >= 0 && percentage < 15) { //All information is wrong
                 ind = Random.Range(0, IDSToEnable.Length);
-                objectToEnable = IDSToEnable[ind];
+                int coinflip = Random.Range(0,2);
+                if (coinflip == 0) {
+                    objectToEnable = IDSToEnable[ind];
+                } else {
+                    objectToEnable = FakeIDSToEnable[ind];
+                }
                 ind = Random.Range(0, IDSToEnable.Length);
                 npcToEnable = NPCSToEnable[ind];
                 appind = Random.Range(0, IDSToEnable.Length);
@@ -40,7 +46,7 @@ public class IDRandomizer : MonoBehaviour
             }
             if (percentage >= 15 && percentage < 31) { //Same application and npc but wrong ID
                 ind = Random.Range(0, IDSToEnable.Length);
-                objectToEnable = IDSToEnable[ind];  
+                objectToEnable = FakeIDSToEnable[ind];  
                 appind = Random.Range(0, IDSToEnable.Length);
                 npcToEnable = NPCSToEnable[appind];
                 screenToEnable = ScreensToEnable[appind];
