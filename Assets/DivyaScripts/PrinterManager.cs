@@ -50,4 +50,3 @@ public class PrinterManager : MonoBehaviour
 // randomize cartidge locations and maybe other items as well?
 // button size?
 // code password
-// move dragged object by changing sortimg order - if collision object => sorting order, set the sorting order to collision object sortung order + 1
