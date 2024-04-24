@@ -126,3 +126,9 @@ The ID can be moved around the screen and you can click the ID to enlarge it and
 After questioning the NPC, if you believe they are lying about their identity, drag their IDs into the paper shredder.
 Good luck!
 ===
+
+title: IntroDialogue
+tags:
+---
+Berry: Thanks for taking the time to submit an online application. To begin the registration process for your library card, I'll need to verify some details. Let's get started, shall we?
+===

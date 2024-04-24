@@ -14,6 +14,8 @@ public class IDRandomizer : MonoBehaviour
 
     public GameObject hintDialogue;
 
+    public GameObject introDialogue;
+
     int ind;
     int appind;
     int percentage;
@@ -30,7 +32,7 @@ public class IDRandomizer : MonoBehaviour
         { //Fake NPC 1 Real ID - Appearance changed but still the real NPC
             Debug.Log("Fake NPC 1 Real ID");
             objectToEnable = IDSToEnable[npc];
-            screenToEnable = ScreensToEnable[npc + 1];
+            screenToEnable = ScreensToEnable[(npc * 3) + 1];
             screenToEnable.SetActive(true);
             objectToEnable.SetActive(true);
         }
@@ -38,7 +40,7 @@ public class IDRandomizer : MonoBehaviour
         { //Fake NPC 2 Real ID - Appearance changed but still the real NPC
             Debug.Log("Fake NPC 2 Real ID");
             objectToEnable = IDSToEnable[npc];
-            screenToEnable = ScreensToEnable[npc + 2];
+            screenToEnable = ScreensToEnable[(npc * 3) + 2];
             screenToEnable.SetActive(true);
             objectToEnable.SetActive(true);
         } 
@@ -46,7 +48,7 @@ public class IDRandomizer : MonoBehaviour
         { //Fake NPC 1 Fake ID - Appearance changed and is not the real NPC
             Debug.Log("Fake NPC 1 Fake ID");
             objectToEnable = FakeIDSToEnable[npc];
-            screenToEnable = ScreensToEnable[npc + 1];
+            screenToEnable = ScreensToEnable[(npc * 3) + 1];
             screenToEnable.SetActive(true);
             objectToEnable.SetActive(true);
         } 
@@ -54,7 +56,7 @@ public class IDRandomizer : MonoBehaviour
         { //Fake NPC 2 Fake ID - Appearance changed and is not the real NPC
             Debug.Log("Fake NPC 2 Fake ID");
             objectToEnable = FakeIDSToEnable[npc];
-            screenToEnable = ScreensToEnable[npc + 2];
+            screenToEnable = ScreensToEnable[(npc * 3) + 2];
             screenToEnable.SetActive(true);
             objectToEnable.SetActive(true);
         }    
@@ -67,6 +69,7 @@ public class IDRandomizer : MonoBehaviour
             objectToEnable.SetActive(true);
         }
         Debug.Log("NPC is: " + npc);
+        introDialogue.SetActive(true);
     }
 
     public void hint() 
