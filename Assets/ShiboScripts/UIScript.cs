@@ -11,10 +11,10 @@ public class UIScript : MonoBehaviour
     public TMP_InputField[] inputFields;
     public Button saveButton;
     private string[] prompts = new string[] { "Name", "DOB", "ID", "Address" };
-    public GameObject image;
     public GameObject imageborder;
     public GameObject InText;
     public GameObject dialoguePrefab;
+    public GameObject success;
 
     void Start()
     {
@@ -23,33 +23,20 @@ public class UIScript : MonoBehaviour
 
     private void OnSaveButtonClick()
     {
-        List<string> userInputList = new List<string>();
-        foreach (TMP_InputField inputField in inputFields)
-        {
-            userInputList.Add(inputField.text);
-        }
-
-        DisplayUserInputs(userInputList);
+        DisplayUserInputs();
     }
 
-    private void DisplayUserInputs(List<string> userInputList)
+    private void DisplayUserInputs()
     {
-        string outputText = "New Library Card Registered!:\n\n";
-        for (int i = 0; i < prompts.Length; i++)
-        {
-            outputText += $"{prompts[i]}: {userInputList[i]}\n";
-        }
-        output.text = outputText;
-
         foreach (TMP_InputField inputField in inputFields)
         {
             inputField.gameObject.SetActive(false);
         }
         saveButton.gameObject.SetActive(false);
         returnButton.SetActive(true);
-        image.SetActive(false);
         imageborder.SetActive(false);
         InText.SetActive(false);
         dialoguePrefab.SetActive(true);
+        success.SetActive(true);
     }
 }

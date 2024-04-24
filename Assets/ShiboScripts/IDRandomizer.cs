@@ -10,6 +10,7 @@ public class IDRandomizer : MonoBehaviour
     public GameObject[] ScreensToEnable;
     public GameObject[] NPCSToEnable;
     public GameObject[] DialoguesToEnable;
+
     int ind;
     int appind;
     int percentage;
@@ -74,6 +75,7 @@ public class IDRandomizer : MonoBehaviour
                 objectToEnable.SetActive(true);
             }
         }
+        ActivateDialogue();
     }
     
     public void ActivateDialogue() 
