@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigameShelving.unity
     guid: 6d90089c8f9d74c7fbaea93c25106fc8
+  - enabled: 1
+    path: Assets/Scenes/MainMenu2.unity
+    guid: d9632f42108b44cc0b91984d58906e04
   m_configObjects: {}

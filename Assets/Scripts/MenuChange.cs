@@ -16,6 +16,10 @@ public class MenuChange : MonoBehaviour
         SceneManager.LoadScene("MapScene");
     }
 
+    public void GoToMain2() {
+        SceneManager.LoadScene("MainMenu2");
+    }
+
     public void GoBackToMain() {
         SceneManager.LoadScene("MainMenuScene");
     }
