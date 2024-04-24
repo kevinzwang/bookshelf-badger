@@ -1,0 +1,104 @@
+﻿title: NPC3NameReal
+tags:
+position: 236,-71
+---
+Berry: Whats your name?
+===
+
+title: NPC3AddyReal
+tags:
+position: -208,41
+---
+Berry: Whats your address?
+===
+
+title: NPC3GenreReal
+tags:
+position: 240,200
+---
+Berry: Whats your favorite genre?
+===
+
+title: NPC3BookReal
+tags:
+position: -60,193
+---
+Berry: Whats your favorite book?
+===
+
+title: NPC3PhotoReal
+tags:
+position: -36,-163
+---
+Berry: Why do you look different from your ID photo?
+===
+
+title: NPC3NameFake
+tags:
+position: 236,-71
+---
+Berry: Whats your name imposter 1 NPC 3?
+===
+
+title: NPC3AddyFake
+tags:
+position: -208,41
+---
+Berry: Whats your address imposter 1 NPC 3?
+===
+
+title: NPC3GenreFake
+tags:
+position: 240,200
+---
+Berry: Whats your favorite genre imposter 1 NPC 3?
+===
+
+title: NPC3BookFake
+tags:
+position: -60,193
+---
+Berry: Whats your favorite book imposter 1 NPC 3?
+===
+
+title: NPC3PhotoFake
+tags:
+position: -36,-163
+---
+Berry: Why do you look different from your ID photo imposter 1 NPC 3?
+===
+
+title: NPC3NameFake1
+tags:
+position: 236,-71
+---
+Berry: Whats your name imposter 2 NPC 3?
+===
+
+title: NPC3AddyFake1
+tags:
+position: -208,41
+---
+Berry: Whats your address impoter 2 NPC 3?
+===
+
+title: NPC3GenreFake1
+tags:
+position: 240,200
+---
+Berry: Whats your favorite genre imposter 2 NPC 3?
+===
+
+title: NPC3BookFake1
+tags:
+position: -60,193
+---
+Berry: Whats your favorite book imposter 2 NPC 3?
+===
+
+title: NPC3PhotoFake1
+tags:
+position: -36,-163
+---
+Berry: Why do you look different from your ID photo imposter 2 NPC 3?
+===

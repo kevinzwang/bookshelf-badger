@@ -9,6 +9,7 @@ public class CheckScript : MonoBehaviour
     public GameObject infoScreen;
     public GameObject inputScreen;
     public GameObject dialoguePrefab;
+    public GameObject[] previousScreen;
 
     private bool inputScreenInstantiated = false;
     private bool dialogueInstatiated = false;
@@ -17,11 +18,14 @@ public class CheckScript : MonoBehaviour
     {
         if (togs[0].isOn && togs[1].isOn && togs[2].isOn && togs[3].isOn && togs[4].isOn && !inputScreenInstantiated && !dialogueInstatiated)
         {
-            infoScreen.SetActive(false);
+            //infoScreen.SetActive(false);
             inputScreen.SetActive(true);
             inputScreenInstantiated = true;
             dialogueInstatiated = true;
-        
+            foreach (GameObject gameObject in previousScreen) 
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }
