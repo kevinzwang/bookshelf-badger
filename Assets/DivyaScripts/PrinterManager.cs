@@ -4,49 +4,45 @@ using UnityEngine;
 
 public class PrinterManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    SpriteRenderer screenSprite;
-    public GameObject goodPaper;
-    public GameObject cyanEmpty;
-    public GameObject magEmpty;
-    public GameObject yellEmpty;
-    public GameObject blackEmpty;
+    
+
+    public GameObject animatedPrinter;
+    public GameObject cyanX;
+    public GameObject magentaX;
+    public GameObject keyX;
+    public GameObject yellowX;
+    public GameObject paperX;
+    public GameObject passwordX;
+    public GameObject paperInsert;
+    private Animator animator;
+    private PaperManager script1;
+    private CartManager script2;
+    private DivyaClick script3;
+    public GameObject printerbody;
 
 
     void Start()
-    {
-        screenSprite =  GameObject.Find("screen").GetComponent<SpriteRenderer>();
-        screenSprite.color = Color.red;
+    { 
+        // script1 = FindObjectOfType<PaperManager>();
+        // script2 = FindObjectOfType<CartManager>();
+        // script3 = FindObjectOfType<DivyaClick>();
+        // animator = animatedPrinter.GetComponent<Animator>();
+        // Debug.Log(script1.win1);
+        // Debug.Log(script2.win2);
+        // Debug.Log(script3.win3);
 
-        goodPaper.SetActive(false);
 
 
-    
     }
 
     void Update()
     {
-
-        if (goodPaper.activeSelf && !cyanEmpty.activeSelf && !magEmpty.activeSelf && !yellEmpty.activeSelf && !blackEmpty.activeSelf) {
-            screenSprite.color = Color.blue;
+        if (DivyaClick.win3 && CartManager.win2 && PaperManager.win1) {
+            Debug.Log("Win");
+            printerbody.SetActive(false);
+            animatedPrinter.SetActive(true);
         }
     }
 
     
 }
-
-
-// cannot move beyond certain area or gets returned to og spot
-// cannot be on top of printer
-// cannot move anything except moveable items
-// how to add animation
-// glowing green button to play animation
-// red and green bunny to indicate correct reset password
-// glowing paper
-// why is animation printer blurry
-// fix background password
-// how to do animation
-// randomize problems
-// randomize cartidge locations and maybe other items as well?
-// button size?
-// code password

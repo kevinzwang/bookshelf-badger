@@ -2,30 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InkController : MonoBehaviour
+public class CartManager : MonoBehaviour
 {
     public GameObject magCheck;
     public GameObject yellowCheck;
     public GameObject cyanCheck;
     public GameObject keyCheck;
+    public static bool win2;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        win2 = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (magCheck.activeSelf && yellowCheck.activeSelf && cyanCheck.activeSelf && keyCheck.activeSelf){
+            win2 = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "cartridgeSlot-magenta" && gameObject.name == "cartridge-magenta"){
-            Debug.Log("hi");
             magCheck.SetActive(true);
             GameObject.Find("redX_magenta").SetActive(false);
             gameObject.SetActive(false);
@@ -38,7 +39,6 @@ public class InkController : MonoBehaviour
         }
 
         if (collision.gameObject.name == "cartridgeSlot-cyan" && gameObject.name == "cartridge-cyan"){
-            Debug.Log("hi");
             cyanCheck.SetActive(true);
             GameObject.Find("redX_cyan").SetActive(false);
             gameObject.SetActive(false);
@@ -49,8 +49,6 @@ public class InkController : MonoBehaviour
             GameObject.Find("redX_key").SetActive(false);
             gameObject.SetActive(false);
         }
-
-        
 
     }
 }

@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ReturntoMain : MonoBehaviour
 {
-    public void MovetoScene(int sceneID) {
-        SceneManager.LoadScene(sceneID);
+    GameManager gameManager;
+
+    void Awake() 
+    {
+        gameManager = GameManager.Instance;
+    }
+
+    public void Return() 
+    {
+        gameManager.ExitMiniGame();
+        gameManager.AddScore(1);
     }
 }

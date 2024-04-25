@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaperControl : MonoBehaviour
+public class PaperManager : MonoBehaviour
 {
 
     public GameObject goodPaper;
-    public GameObject jammed;
-    public bool paperSet;
+    public GameObject paperCheck;
+    public GameObject paperX;
+    public static bool win1;
 
     // Start is called before the first frame update
     void Start()
     {
-        paperSet = false;
+        win1 = false;
     }
 
     // Update is called once per frame
@@ -23,10 +24,12 @@ public class PaperControl : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "paperTray" && !jammed.activeSelf){
+        if (collision.gameObject.name == "paperTray"){
             goodPaper.SetActive(true);
             gameObject.SetActive(false);
-            paperSet = true;
+            paperX.SetActive(false);
+            paperCheck.SetActive(true);
+            win1 = true;
         }
 
     }

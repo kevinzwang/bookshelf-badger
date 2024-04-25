@@ -8,6 +8,7 @@ TagManager:
   - ID
   - movable
   - checklist
+  - key
   layers:
   - Default
   - TransparentFX
