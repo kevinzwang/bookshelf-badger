@@ -1,0 +1,18 @@
+title: BirdDialogue
+---
+<<declare $birdSuccess = false>>
+
+Bird: I'm trying to recall a book that I read long ago... I'm wondering if you could help me!
+-> Of course!
+Bird: It's a tale set in Mew York City, about a wealthy feline who courts a married cat and dies in the end of the book.
+-> Anything else?
+Bird: Hm.... Oh! It had a movie adaptation starring Leonardo DiCatprio!
+-> It has to be "A Tail of Two Kitties"
+    Bird: That's not it, oh I think it was "The Great Catsby"!
+-> It's definitely "The Great Catsby"
+    <<set $birdSuccess to true>>
+    Bird: Yup! That's it! Thank you so much!
+-> If I had to guess, it would be "The Wonderful Wizard of Paws"
+    Bird: That's not even the same genre. Oh, I think it was "The Great Catsby"!
+Bird: Anyway, thanks for the help. See you around!
+===

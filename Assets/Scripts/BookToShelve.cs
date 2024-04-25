@@ -11,6 +11,8 @@ public class BookToShelve : MonoBehaviour
     GameManager gameManager;
     SpriteRenderer spriteRenderer;
 
+    private bool moveToMouse = true;
+
     private void Awake()
     {
         gameManager = GameManager.Instance;
@@ -28,17 +30,20 @@ public class BookToShelve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
-        transform.position = Vector3.Lerp(transform.position, mousePos, followSpeed);
+        if (moveToMouse) {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+            transform.position = Vector3.Lerp(transform.position, mousePos, followSpeed);
+        }
     }
 
     public void Shelve() {
         StartCoroutine(ShelveAnimation());
+        moveToMouse = false;
     }
 
     IEnumerator ShelveAnimation() {
-        float totalTime = 1f;
+        float totalTime = .75f;
         float timeInterval = 0.01f;
 
 
@@ -57,9 +62,10 @@ public class BookToShelve : MonoBehaviour
             yield return new WaitForSeconds(timeInterval);
         }
 
-        gameManager.DropBook();
+        
         gameManager.AddScore(1);
         gameManager.ExitMiniGame();
+        gameManager.DropBook();
 
         yield return null;
     }
