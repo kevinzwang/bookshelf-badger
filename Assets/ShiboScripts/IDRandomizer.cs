@@ -16,6 +16,8 @@ public class IDRandomizer : MonoBehaviour
 
     public GameObject introDialogue;
 
+    GameManager gameManager;
+
     int ind;
     int appind;
     int percentage;
@@ -23,7 +25,20 @@ public class IDRandomizer : MonoBehaviour
 
     void Start()
     {
-        npc = Random.Range(0, 3);
+        gameManager = GameManager.Instance;
+        string npcName = gameManager.GetPatron();
+        if (npcName == "bird")
+        {
+            npc = 0;
+        }
+        if (npcName == "cat")
+        {
+            npc = 1;
+        }
+        if (npcName == "elephant")
+        {
+            npc = 2;
+        }
         percentage = Random.Range(0, 100);
         Debug.Log("Percent: " + percentage);
         GameObject screenToEnable;
