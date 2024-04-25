@@ -242,11 +242,11 @@ public class IDRandomizer : MonoBehaviour
         }
         if (percentage >= 0 && percentage < 10) 
         { //Fake NPC 1 Real ID
-            Instantiate(options[4]); //tells real appearance
+            Instantiate(options[15]); //tells real appearance
         }    
         if (percentage >= 10 && percentage < 20) 
         { //Fake NPC 2 Real ID
-            Instantiate(options[4]); //tells real appearance
+            Instantiate(options[16]); //tells real appearance
         } 
         if (percentage >= 20 && percentage < 30) 
         { //Fake NPC 1 Fake ID

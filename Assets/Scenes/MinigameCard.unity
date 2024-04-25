@@ -917,6 +917,9 @@ MonoBehaviour:
   - {fileID: 1183209039}
   - {fileID: 1120168123}
   - {fileID: 1952602642}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!1 &57816490
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,6 +3515,9 @@ MonoBehaviour:
   - {fileID: 1611135131}
   - {fileID: 1303000581}
   - {fileID: 971005725}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!1 &247520661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,6 +4707,9 @@ MonoBehaviour:
   - {fileID: 568002696}
   - {fileID: 1832839925}
   - {fileID: 728856092}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &331356179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5832,6 +5841,9 @@ MonoBehaviour:
   - {fileID: 1880822755}
   - {fileID: 1762991402}
   - {fileID: 1812315855}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &373949870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14143,6 +14155,9 @@ MonoBehaviour:
   - {fileID: 452927211}
   - {fileID: 455998699}
   - {fileID: 1746818465}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &751762817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15123,6 +15138,9 @@ MonoBehaviour:
   - {fileID: 304674834}
   - {fileID: 1371151378}
   - {fileID: 444821001}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &781284037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17728,6 +17746,9 @@ MonoBehaviour:
   - {fileID: 2128461439}
   - {fileID: 1176647642}
   - {fileID: 1854681283}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &929351384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24729,6 +24750,9 @@ MonoBehaviour:
   - {fileID: 818145385}
   - {fileID: 1653889914}
   - {fileID: 1339714817}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!212 &1212031518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32631,6 +32655,9 @@ MonoBehaviour:
   - {fileID: 1898160805}
   - {fileID: 1605689103}
   - {fileID: 1156401885}
+  returnButton: {fileID: 1538012271}
+  successDialogue: {fileID: 556530457}
+  success: {fileID: 1616167248}
 --- !u!1 &1590511821
 GameObject:
   m_ObjectHideFlags: 0
@@ -39622,6 +39649,8 @@ MonoBehaviour:
   - {fileID: 2543286429380442849, guid: 5b64ee5203b6fd84eb6b4a18180cf75c, type: 3}
   - {fileID: 2796729453822692397, guid: c159ff1a5b36c4641b725119a220164a, type: 3}
   - {fileID: 5321679583365983693, guid: 6a9b3daf03a53d2498b7d5689c971f98, type: 3}
+  - {fileID: 7190845301153558041, guid: cb79c971deba10a49b2b40197413d57d, type: 3}
+  - {fileID: 3365489858600599639, guid: c1d48b8e27d31674b81a8326d8b8748b, type: 3}
   DialoguesToEnableNPC2:
   - {fileID: 1852441941017974007, guid: 50dfab9bf4c4cc245b5c6644c4ca6047, type: 3}
   - {fileID: 6529613452449016303, guid: 1a10bc86b42fd6f48a1ed10d1ad74780, type: 3}
@@ -39638,6 +39667,8 @@ MonoBehaviour:
   - {fileID: 6486701763828071111, guid: a1ffe4a175d638645a84e2d877474453, type: 3}
   - {fileID: 8050932192282908661, guid: 8d1eae83d8053b1439b78b7a98780cef, type: 3}
   - {fileID: 7504959373915272810, guid: 6ce384be094eea54b846b8a64f94155d, type: 3}
+  - {fileID: 7329671166125042246, guid: 4da11f3ccdbc3d94ea50a505cef52638, type: 3}
+  - {fileID: 544891001769193002, guid: a0604c97d2d6c5347b1d7eb77bd1bcab, type: 3}
   DialoguesToEnableNPC3:
   - {fileID: 7932557557660963139, guid: 337846da8a666394683be85c11ea7f8b, type: 3}
   - {fileID: 7102114578015458718, guid: a792179d551313c4c99e55b8de90cd64, type: 3}
@@ -39654,6 +39685,8 @@ MonoBehaviour:
   - {fileID: 2270844388009285369, guid: db18508d3400fb349b8de4a512993065, type: 3}
   - {fileID: 4950653997104476672, guid: 365b53f987158e9439ec1ca6fa6da85d, type: 3}
   - {fileID: 7219505169620590831, guid: 5ee4138140600c245b28b35375bf328f, type: 3}
+  - {fileID: 8793462204320980733, guid: be6fadf6d3b1728499c7e30f27ea2782, type: 3}
+  - {fileID: 7817792797378490973, guid: 35a766984ceda95469b1bfeea564b992, type: 3}
   hintDialogue: {fileID: 1290888258378806894, guid: 5232b6ee6686c5b40936dec1ffa045c8, type: 3}
   introDialogue: {fileID: 842216750}
 --- !u!114 &1987959041
