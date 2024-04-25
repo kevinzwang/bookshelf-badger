@@ -21,7 +21,7 @@ public class IDRandomizer : MonoBehaviour
     int percentage;
     int npc;
 
-     void Start()
+    void Start()
     {
         npc = Random.Range(0, 3);
         percentage = Random.Range(0, 100);
