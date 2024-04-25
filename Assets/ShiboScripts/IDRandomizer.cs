@@ -8,105 +8,257 @@ public class IDRandomizer : MonoBehaviour
     public GameObject[] IDSToEnable;
     public GameObject[] FakeIDSToEnable;
     public GameObject[] ScreensToEnable;
-    public GameObject[] NPCSToEnable;
-    public GameObject[] DialoguesToEnable;
+    public GameObject[] DialoguesToEnableNPC1;
+    public GameObject[] DialoguesToEnableNPC2;
+    public GameObject[] DialoguesToEnableNPC3;
+
+    public GameObject hintDialogue;
+
+    public GameObject introDialogue;
 
     int ind;
     int appind;
     int percentage;
+    int npc;
 
     void Start()
     {
+        npc = Random.Range(0, 3);
         percentage = Random.Range(0, 100);
         Debug.Log("Percent: " + percentage);
-        if (IDSToEnable.Length > 0 && ScreensToEnable.Length > 0)
-        {
-            GameObject screenToEnable;
-            GameObject npcToEnable;
-            GameObject objectToEnable;
-            if (percentage >= 0 && percentage < 15) 
-            { //All information is wrong
-                ind = Random.Range(0, IDSToEnable.Length);
-                int coinflip = Random.Range(0,2);
-                if (coinflip == 0) 
-                {
-                    objectToEnable = IDSToEnable[ind];
-                } else {
-                    objectToEnable = FakeIDSToEnable[ind];
-                }
-                ind = Random.Range(0, IDSToEnable.Length);
-                npcToEnable = NPCSToEnable[ind];
-                appind = Random.Range(0, IDSToEnable.Length);
-                screenToEnable = ScreensToEnable[appind];
-                npcToEnable.SetActive(true);
-                screenToEnable.SetActive(true);
-                objectToEnable.SetActive(true);
-            }
-            if (percentage >= 15 && percentage < 31) 
-            { //Same application and npc but wrong ID
-                ind = Random.Range(0, IDSToEnable.Length);
-                objectToEnable = FakeIDSToEnable[ind];  
-                appind = Random.Range(0, IDSToEnable.Length);
-                npcToEnable = NPCSToEnable[appind];
-                screenToEnable = ScreensToEnable[appind];
-                npcToEnable.SetActive(true);
-                screenToEnable.SetActive(true);
-                objectToEnable.SetActive(true);
-            } 
-            if (percentage >= 31 && percentage < 46) 
-            { //Same application and ID but wrong NPC
-                appind = Random.Range(0, IDSToEnable.Length);
-                objectToEnable = IDSToEnable[appind];
-                screenToEnable = ScreensToEnable[appind];
-                ind = Random.Range(0, IDSToEnable.Length);
-                npcToEnable = NPCSToEnable[ind];
-                npcToEnable.SetActive(true);
-                screenToEnable.SetActive(true);
-                objectToEnable.SetActive(true);
-            } 
-            if (percentage >= 46 && percentage < 100) 
-            { //Real npc
-                appind = Random.Range(0, IDSToEnable.Length);
-                screenToEnable = ScreensToEnable[appind];
-                npcToEnable = NPCSToEnable[appind];
-                objectToEnable = IDSToEnable[appind];
-                npcToEnable.SetActive(true);
-                screenToEnable.SetActive(true);
-                objectToEnable.SetActive(true);
-            }
+        GameObject screenToEnable;
+        GameObject objectToEnable;
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID - Appearance changed but still the real NPC
+            Debug.Log("Fake NPC 1 Real ID");
+            objectToEnable = IDSToEnable[npc];
+            screenToEnable = ScreensToEnable[(npc * 3) + 1];
+            screenToEnable.SetActive(true);
+            objectToEnable.SetActive(true);
         }
-        ActivateDialogue();
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID - Appearance changed but still the real NPC
+            Debug.Log("Fake NPC 2 Real ID");
+            objectToEnable = IDSToEnable[npc];
+            screenToEnable = ScreensToEnable[(npc * 3) + 2];
+            screenToEnable.SetActive(true);
+            objectToEnable.SetActive(true);
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID - Appearance changed and is not the real NPC
+            Debug.Log("Fake NPC 1 Fake ID");
+            objectToEnable = FakeIDSToEnable[npc];
+            screenToEnable = ScreensToEnable[(npc * 3) + 1];
+            screenToEnable.SetActive(true);
+            objectToEnable.SetActive(true);
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID - Appearance changed and is not the real NPC
+            Debug.Log("Fake NPC 2 Fake ID");
+            objectToEnable = FakeIDSToEnable[npc];
+            screenToEnable = ScreensToEnable[(npc * 3) + 2];
+            screenToEnable.SetActive(true);
+            objectToEnable.SetActive(true);
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Debug.Log("Real Everything");
+            objectToEnable = IDSToEnable[npc];
+            screenToEnable = ScreensToEnable[npc * 3];
+            screenToEnable.SetActive(true);
+            objectToEnable.SetActive(true);
+        }
+        Debug.Log("NPC is: " + npc);
+        introDialogue.SetActive(true);
     }
-    
-    public void ActivateDialogue() 
+
+    public void hint() 
     {
-        int i = Random.Range(0, 2);
-        if (appind == 0) 
-        {
-            if (i == 0) 
-            {
-                Instantiate(DialoguesToEnable[0]);
-            } else {
-                Instantiate(DialoguesToEnable[1]);
-            }
-        }
-        if (appind == 1) 
-        {
-            if (i == 0) 
-            {
-                Instantiate(DialoguesToEnable[2]);
-            } else {
-                Instantiate(DialoguesToEnable[3]);
-            }
-        }
-        if (appind == 2) 
-        {
-            if (i == 0) 
-            {
-                Instantiate(DialoguesToEnable[4]);
-            } else {
-                Instantiate(DialoguesToEnable[5]);
-            }
-        }
+        Instantiate(hintDialogue);
     }
+
+    public void nameQuestion() 
+    {
+        GameObject[] options = new GameObject[0];
+        if (npc == 0)
+        {
+            options = DialoguesToEnableNPC1;
+        }
+        if (npc == 1)
+        {
+            options = DialoguesToEnableNPC2;
+        }
+        if (npc == 2)
+        {
+            options = DialoguesToEnableNPC3;
+        }
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID
+            Instantiate(options[0]); //tells real name
+        }    
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID
+            Instantiate(options[0]); //tells real name
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID
+            Instantiate(options[5]); //tells fake name variant 1
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID
+            Instantiate(options[10]); //tells fake name variant 2
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Instantiate(options[0]); //tells real name
+        }
+    }    
+
+    public void addyQuestion() 
+    {
+        GameObject[] options = new GameObject[0];
+        if (npc == 0)
+        {
+            options = DialoguesToEnableNPC1;
+        }
+        if (npc == 1)
+        {
+            options = DialoguesToEnableNPC2;
+        }
+        if (npc == 2)
+        {
+            options = DialoguesToEnableNPC3;
+        }
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID
+            Instantiate(options[1]); //tells real addy
+        }    
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID
+            Instantiate(options[1]); //tells real addy
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID
+            Instantiate(options[6]); //tells fake addy variant 1
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID
+            Instantiate(options[11]); //tells fake addy variant 2
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Instantiate(options[1]); //tells real addy
+        }
+    }  
+
+    public void genreQuestion() 
+    {
+        GameObject[] options = new GameObject[0];
+        if (npc == 0)
+        {
+            options = DialoguesToEnableNPC1;
+        }
+        if (npc == 1)
+        {
+            options = DialoguesToEnableNPC2;
+        }
+        if (npc == 2)
+        {
+            options = DialoguesToEnableNPC3;
+        }
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID
+            Instantiate(options[2]); //tells real genre
+        }    
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID
+            Instantiate(options[2]); //tells real genre
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID
+            Instantiate(options[7]); //tells fake genre variant 1
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID
+            Instantiate(options[12]); //tells fake genre variant 2
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Instantiate(options[2]); //tells real genre
+        }
+    }  
+
+    public void bookQuestion() 
+    {
+        GameObject[] options = new GameObject[0];
+        if (npc == 0)
+        {
+            options = DialoguesToEnableNPC1;
+        }
+        if (npc == 1)
+        {
+            options = DialoguesToEnableNPC2;
+        }
+        if (npc == 2)
+        {
+            options = DialoguesToEnableNPC3;
+        }
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID
+            Instantiate(options[3]); //tells real book
+        }    
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID
+            Instantiate(options[3]); //tells real book
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID
+            Instantiate(options[8]); //tells fake book variant 1
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID
+            Instantiate(options[13]); //tells fake book variant 2
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Instantiate(options[3]); //tells real book
+        }
+    } 
+
+    public void appearanceQuestion() 
+    {
+        GameObject[] options = new GameObject[0];
+        if (npc == 0)
+        {
+            options = DialoguesToEnableNPC1;
+        }
+        if (npc == 1)
+        {
+            options = DialoguesToEnableNPC2;
+        }
+        if (npc == 2)
+        {
+            options = DialoguesToEnableNPC3;
+        }
+        if (percentage >= 0 && percentage < 10) 
+        { //Fake NPC 1 Real ID
+            Instantiate(options[15]); //tells real appearance
+        }    
+        if (percentage >= 10 && percentage < 20) 
+        { //Fake NPC 2 Real ID
+            Instantiate(options[16]); //tells real appearance
+        } 
+        if (percentage >= 20 && percentage < 30) 
+        { //Fake NPC 1 Fake ID
+            Instantiate(options[9]); //tells fake appearance variant 1
+        } 
+        if (percentage >= 30 && percentage < 40) 
+        { //Fake NPC 2 Fake ID
+            Instantiate(options[14]); //tells fake appearance variant 2
+        }    
+        if (percentage >= 40 && percentage < 100) 
+        { //Real Everything
+            Instantiate(options[4]); //tells real appearance
+        }
+    } 
 }

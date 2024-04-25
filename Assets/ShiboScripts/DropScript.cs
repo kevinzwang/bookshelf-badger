@@ -15,7 +15,7 @@ public class DropScript : MonoBehaviour, IDropHandler
     public GameObject reject;
 
     GameObject id;
-    GameObject checklist;
+    GameObject oldDialogue;
 
     void Awake() 
     {
@@ -38,8 +38,8 @@ public class DropScript : MonoBehaviour, IDropHandler
                 anim.SetActive(true);
                 thisItem.SetActive(false);
                 reject.SetActive(true);
-                checklist = GameObject.FindGameObjectWithTag("checklist");
-                checklist.SetActive(false);
+                oldDialogue = GameObject.FindGameObjectWithTag("dialogue");
+                oldDialogue.SetActive(false);
             }
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         }

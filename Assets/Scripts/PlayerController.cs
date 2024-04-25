@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         anim.SetBool("hasBook", true);
         currBook.enabled = true;
-        currBook.color = book.color;
+        // currBook.color = book.color;
     }
 
     public void DropBook()

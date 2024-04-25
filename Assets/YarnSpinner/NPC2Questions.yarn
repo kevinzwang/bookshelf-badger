@@ -1,0 +1,133 @@
+﻿title: NPC2NameReal
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents, miss?
+Maybe Tabitha: Hey there! I'm Tabitha Mew, but you can call me Tabby for short.
+===
+
+title: NPC2AddyReal
+tags:
+position: -208,41
+---
+Berry: We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Tabitha: Oh, sure thing! I live at 103 Claw Street, right in the heart of Purrington City.
+===
+
+title: NPC2GenreReal
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Tabitha: Hmm, I'm totally into romance novels! Like, they're just so heart-warming, ya know? Can't get enough of those lovey-dovey stories!
+===
+
+title: NPC2BookReal
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Tabitha: Oh, for sure! While I'm all about the romance, my absolute fav book is "Moby Duck" by Herman Mallard. It's, like, this epic adventure with a touch of drama, ya feel?
+===
+
+title: NPC2PhotoReal
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Tabitha: Um, well, you see... I kinda got a makeover since that photo was taken. Y'know, new hair, new style, new vibe. Gotta stay fresh and fly, am I right?
+===
+
+title: NPC2NameFake
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents, miss?
+Maybe Tabitha: Um, yeah, sure. It's, uh, T-Tabitha... M-Mew.
+===
+
+title: NPC2AddyFake
+tags:
+position: -208,41
+---
+Berry: We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Tabitha: Oh, uh, my address? Um, well, I'm sort of crashing at different places, y'know? I think, like, my last spot was, uh, 789 Whisker Way, Purrington City.
+===
+
+title: NPC2GenreFake
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Tabitha: My favorite genre of books? Uh, I guess I'm into... um, historical stuff? Yeah, like, ancient tales and stuff, y'know?
+===
+
+title: NPC2BookFake
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Tabitha: Oh, uh, my favorite book? Um, it's, like, this classic one... "Moby Quack" by Herman Goose. Yeah, totally. It's, uh, about a guy and a big fish... or something like that.
+===
+
+title: NPC2PhotoFake
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Tabitha: Uh, well, you see... I've, like, started wearing glasses since that photo was taken. Thought it'd give me a smarter vibe, y'know? Oh, and maybe I've toned down the hair a bit. Yeah, that's it.
+===
+
+title: NPC2NameFake1
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents, miss?
+Maybe Tabitha: Um, yeah, sure. It's, uh, T-Tabitha... M-Mew.
+===
+
+title: NPC2AddyFake1
+tags:
+position: -208,41
+---
+Berry: We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Tabitha: Oh, uh, my address? Um, well, I'm sort of crashing at different places, y'know? I think, like, my last spot was, uh, 789 Whisker Way, Purrington City.
+===
+
+title: NPC2GenreFake1
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Tabitha: My favorite genre of books? Uh, I guess I'm into... um, historical stuff? Yeah, like, ancient tales and stuff, y'know?
+===
+
+title: NPC2BookFake1
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Tabitha: Oh, uh, my favorite book? Um, it's, like, this classic one... "Moby Quack" by Herman Goose. Yeah, totally. It's, uh, about a guy and a big fish... or something like that.
+===
+
+title: NPC2PhotoFake1
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Tabitha: Oh, well, you see... It's kind of funny, really. You know how cat stripes tend to change colors when you get older? Ha ha! And these new hairpins? Yeah, they're like, uh, magical hairpins! They change the color of my fur every time I wear them! Pretty wild, huh?
+===
+
+title: NPC2PhotoExplanation
+tags:
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Tabitha: Oh, totally! I just got these new glasses. They're all the rage now, you know? Like, a total fashion statement! Plus, they're super trendy and go with everything!
+===
+
+title: NPC2PhotoExplanation1
+tags:
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Tabitha: Oh, yeah! You see, I wanted to switch things up a bit today. I did my makeup with different colored stripes to my fur and put on some new hairpins. I'm going out with friends later, so I thought I'd jazz up my look a little!
+===

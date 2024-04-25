@@ -15,6 +15,7 @@ public class UIScript : MonoBehaviour
     public GameObject InText;
     public GameObject dialoguePrefab;
     public GameObject success;
+    GameObject oldDialogue;
 
     void Start()
     {
@@ -34,9 +35,11 @@ public class UIScript : MonoBehaviour
         }
         saveButton.gameObject.SetActive(false);
         returnButton.SetActive(true);
-        imageborder.SetActive(false);
+        //imageborder.SetActive(false);
         InText.SetActive(false);
         dialoguePrefab.SetActive(true);
         success.SetActive(true);
+        oldDialogue = GameObject.FindGameObjectWithTag("dialogue");
+        oldDialogue.SetActive(false);
     }
 }

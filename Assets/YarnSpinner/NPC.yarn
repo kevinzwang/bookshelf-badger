@@ -15,9 +15,8 @@ title: Reject
 tags:
 position: -17,84
 ---
-Evil NPC: Dang, you caught me...
-Berry: I can't believe you tried to trick me. I'm calling the police...
-Berry: GET OUTTTTTTTTTTT!!!!!!!
+Berry: Hmm, I'm sensing something suspicious here. I'm afraid I'll have to reject your application...
+Berry: Please leave immediately!
 ===
 
 title: Approve
@@ -27,81 +26,18 @@ position: -12,250
 Berry the Badger: Congratulations on your new card! Welcome to the library!!!!!!!
 ===
 
-title: NPC1Real
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love horror books!
-Berry the Badger: Yay me too! What's your favorite book?
-NPC: Hmmm favorite book? It's gotta be Harry Otter and the Chamber of Fish by J. K. Roly-Poly!
-Berry the Badger: Good choice!
-===
-
-title: NPC1Fake
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love science fiction books!
-Berry the Badger: Interesting... What's your favorite book?
-NPC: Oh it's gotta be The Fault in Our Starfish by Jelly Green!
-Berry the Badger: Are you sure its not Harry Otter and the Chamber of Fish by J. K. Roly-Poly...
-NPC: That's what I meant haha...
-===
-
-title: NPC2Real
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love romance books!
-Berry the Badger: Yay me too! What's your favorite book?
-NPC: Hmmm favorite book? It's gotta be Moby Duck by Herman Mallard!
-Berry the Badger: Good choice!
-===
-
-title: NPC2Fake
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love thriller books!
-Berry the Badger: Interesting... What's your favorite book?
-NPC: Oh it's gotta be Ant Gone by Slothocles!
-Berry the Badger: Are you sure its not Moby Duck...
-NPC: That's what I meant haha...
-===
-
-title: NPC3Real
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love fantasy books!
-Berry the Badger: Yay me too! What's your favorite book?
-NPC: Hmmm favorite book? It's gotta be The Wonderful Wizard of Paws by L. Frank Clawm!
-Berry the Badger: Good choice!
-===
-
-title: NPC3Fake
-tags:
----
-Berry the Badger: Soooo what kind of books do you like?
-NPC: Oh great question, I love thriller books!
-Berry the Badger: Interesting... What's your favorite book?
-NPC: Oh it's gotta be Raccooneo and Jackalette by Walrus Shakespeare!
-Berry the Badger: Are you sure its not The Wonderful Wizard of Paws by L. Frank Clawm...
-NPC: That's what I meant haha...
-===
-
 title: Questions1Real
 tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Trixie: My name is Trixie Tweet!
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Trixie: 554 Nest Ave, Chirpville!
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Trixie: Oh great question, I love horror books!
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Trixie: Hmmm favorite book? It's gotta be Harry Otter and the Chamber of Fish by J. K. Roly-Poly!
 ===
 
@@ -110,13 +46,13 @@ tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Maybe Trixie: Oh uhh... my name? M-my name is Viole- I mean Trixie Tweet! Yeah, that's it. Trixie Tweet. Just your average, uh, citizen, you know? Nothing suspicious about me at all. 
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Maybe Trixie: Oh, my address? Well, you see, I'm sort of between places at the moment. You know how it is, always on the move, exploring new horizons and all that. But the last time I remember, I was living at 654 Nest Ave, Chirp City!
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Maybe Trixie: My favorite genre of books? Oh, that's an easy one. I'm a sucker for thrillers, you know, the kind that keeps you on the edge of your seat, heart pounding, wondering what's gonna happen next!
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Maybe Trixie: Oh, uh, my favorite book? Well, it's, uh, this kinda... obscure one, you know? It's called, um, "Harry Otter and the Chamber of Fish" by J. K. Roly-Poly. Yeah, that's the one! It's about, um, this kid, um, Harry Otter, who finds this, uh, super powerful wand thingy. And he has to, um, go on this big adventure to protect it from, uh, bad guys and stuff!
 ===
 
@@ -125,13 +61,13 @@ tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Tabitha: My name is Tabitha Mew!
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Tabitha: 103 Claw St, Purrington!
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Tabitha: Oh great question, I love romance books!
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Tabitha: Hmmm favorite book? It's gotta be Moby Duck by Herman Mallard!
 ===
 
@@ -140,13 +76,13 @@ tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Maybe Tabitha: Oh, uh, my name? It's, um, T-Tabitha... I mean, Mew. Yeah, that's it. Mew Tabitha.
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Maybe Tabitha: Address? Um, well, I, uh, move around a lot, you see? Can't really... pin it down. Always on the... prowl for, um, new adventures and... hiding spots, you know? But I think my current address is uh.. 301 Fang St, Cattington.
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Maybe Tabitha: Favorite genre? Uh, books? Well, I-I-I guess I... I kinda like, um, mysteries? Yeah, mysteries are, uh, fascinating. You never know what's, um, lurking on the next page, right?
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Maybe Tabitha: Favorite book? Uh, well, I'd have to say it's, uh, 'M-M-Moby Duck' by, um, Herman... Mallard. Yeah, that's the one. It's this, uh, epic tale of, um, this big... duck and this, uh, captain who's, uh, obsessed with, uh, hunting it down. Really, uh, intense stuff, you know? Yeah, definitely uh, my favorite book.
 ===
 
@@ -155,13 +91,13 @@ tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Ellie: My name is Ellie Phant!
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Ellie: 680 Stomp Lane, Trumpet Town!
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Ellie: Oh great question, I love fantasy books!
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Ellie: Hmmm favorite book? It's gotta be The Wonderful Wizard of Paws by L. Frank Clawn!
 ===
 
@@ -170,12 +106,28 @@ tags:
 ---
 Berry the Badger: So you'd like to register a library card huh? 
 Berry the Badger: There's been a book thief going around so I'll have to ask you a couple of questions to confirm your identity.
--> What's your full name?
+-> <b><color=black>What's your full name?</b></color></font>
     Maybe Ellie: Oh, um, my name? Well, it's, uh, Ellie Phant. Yep, Ellie Phant, ha ha. Or was it Ry Nough... You know how us Elephants are, ha ha, we tend to forget things! Too much on our minds with all the trampling and trumpeting, you know?
-    -> What's your address?
+    -> <b><color=black>What's your address?</b></color></font>
         Maybe Ellie: Address? Oh, uh, well, I don't really have a fixed one, you see. Elephants like me, we tend to, uh, move with the wind, roam wherever our big ol' feet take us. But if you ever need to find me, you might catch me stomping down 680 Stomp Lane, if I remember correctly.
-        -> What's your favorite genre of books?
+        -> <b><color=black>What's your favorite genre of books?</b></color></font>
             Maybe Ellie: Favorite genre of books? Ah, that's a tricky one. But if I had to pick, I'd say it's those... uh, nature books. You know, the ones with big, beautiful pictures of the savanna and the jungle. Can't get enough of 'em!
-            -> What's your favorite book?
+            -> <b><color=black>What's your favorite book?</b></color></font>
                 Maybe Ellie: Favorite book? Ah, well, if you're asking, it's gotta be 'The Wonderful Wizard of Paws' by L. Frank Clawn. Yeah, quite the find, that one! It's about this, uh, wild journey to... uh, retrieve a treasure or somethin'. Can't quite remember all the details, but trust me!
+===
+
+title: hint
+tags:
+---
+Make sure the information the NPC gives matches what's on their application by examining their appearance and checking their ID.
+You can question the NPCs to find out why some information might not match and to find any inconsistencies - they might have a good reason!
+The ID can be moved around the screen and you can click the ID to enlarge it and click again to minimize it. 
+After questioning the NPC, if you believe they are lying about their identity, drag their IDs into the paper shredder.
+Good luck!
+===
+
+title: IntroDialogue
+tags:
+---
+Berry: Thanks for taking the time to submit an online application. To begin the registration process for your library card, I'll need to verify some details. Let's get started, shall we?
 ===

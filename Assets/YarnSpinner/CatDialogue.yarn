@@ -1,0 +1,13 @@
+title: CatDialogue
+---
+<<declare $catSuccess = false>>
+
+Cat: What do you think about this drawing? I made it myself!
+-> Looks great!
+    <<set $catSuccess to true>>
+    Cat: Thanks! You have a great day! Purrrrrrr
+-> It looks alright... I guess.
+    Cat: You suck! Go away.
+-> I hate books.
+    Cat: What are you doing here then...
+===

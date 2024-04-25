@@ -4,11 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - RejectDialogue
   - ID
   - movable
   - checklist
   - key
+  - dialogue
+  - RejectDialogue
   layers:
   - Default
   - TransparentFX

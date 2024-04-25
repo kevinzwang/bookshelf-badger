@@ -1,0 +1,133 @@
+﻿title: NPC1NameReal
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents ma'am?
+Maybe Trixie: Oh, hello there! My name is Trixie Tweet, dearie.
+===
+
+title: NPC1AddyReal
+tags:
+position: -208,41
+---
+Berry:  We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Trixie: Of course, my dear. My humble abode is located at 554 Nest Ave, nestled within the serene surroundings of Chirpville.
+===
+
+title: NPC1GenreReal
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Trixie: Ah, the world of literature! While I may be of age, my love for the spooky and spine-chilling tales of horror has never left, dear.
+===
+
+title: NPC1BookReal
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Trixie: "Harry Otter and the Chamber of Fish" by J. K. Roly-Poly is a cherished favorite of mine, dear. Its storytelling and characters never fail to transport me to a realm of wonder and delight.
+===
+
+title: NPC1PhotoReal
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Trixie: Ah, bless your soul, dear. The years have a way of painting their own portrait, don't they? While my appearance may have changed, rest assured, my identity remains steadfast and true.
+===
+
+title: NPC1NameFake
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents, dear?
+Maybe Trixie: U-um, sure. It's, uh, T-Trixie... Tweet.
+===
+
+title: NPC1AddyFake
+tags:
+position: -208,41
+---
+Berry:  We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Trixie: Oh, my address? Well, you see, I'm sort of between places at the moment. You know how it is, always on the move ha ha. But the last time I remember, I was living at 654 Nest Ave, Chirp City.
+===
+
+title: NPC1GenreFake
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Trixie: My favorite genre of books? Oh, th-that's an easy one. I'm a sucker for th-thrillers, you know, the kind that keeps you on the edge of your seat and gets your heart pounding!
+===
+
+title: NPC1BookFake
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Trixie: Oh, uh, my favorite book? Well, it's, uh, this kinda... obscure one, you know? It's called, um, "Harry Otter and the Chamber of Fish" by J. K. Roly-Poly. Yeah, that's the one! It's about, um, this chef, um, Harry Otter, who cooks food!
+===
+
+title: NPC1PhotoFake
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Trixie: U-uh, well, you see, um, glasses... they, uh, they're new... and, uh, I-I lost weight? Yes, l-lost weight.
+===
+
+title: NPC1NameFake1
+tags:
+position: 236,-71
+---
+Berry: Could you kindly provide your full name as it appears on your identification documents, dear?
+Maybe Trixie: U-um, sure. It's, uh, T-Trixie... Tweet.
+===
+
+title: NPC1AddyFake1
+tags:
+position: -208,41
+---
+Berry:  We're required to verify your current place of residence. Could you provide us with your complete address, including street number and city?
+Maybe Trixie: Oh, my address? Well, you see, I'm sort of between places at the moment. You know how it is, always on the move ha ha. But the last time I remember, I was living at 654 Nest Ave, Chirp City.
+===
+
+title: NPC1GenreFake1
+tags:
+position: 240,200
+---
+Berry: We're interested in understanding your literary preferences. What specific genre of books tends to capture your imagination and keep you engrossed?
+Maybe Trixie: My favorite genre of books? Oh, th-that's an easy one. I'm a sucker for th-thrillers, you know, the kind that keeps you on the edge of your seat and gets your heart pounding!
+===
+
+title: NPC1BookFake1
+tags:
+position: -60,193
+---
+Berry: As we delve into your interests further, could you enlighten us about a particular book that holds a special place in your heart?
+Maybe Trixie: Oh, uh, my favorite book? Well, it's, uh, this kinda... obscure one, you know? It's called, um, "Harry Otter and the Chamber of Fish" by J. K. Roly-Poly. Yeah, that's the one! It's about, um, this chef, um, Harry Otter, who cooks food!
+===
+
+title: NPC1PhotoFake1
+tags:
+position: -36,-163
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Trixie: Oh, uh, yes, about that... You see, my hair, it's longer now than in the photo. Must've forgotten to update it, hehe.
+===
+
+title: NPC1PhotoExplanation
+tags:
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Trixie: Ah, yes, about that... You see, I've started wearing glasses since that photo was taken. It helps with my reading? Just a little change to keep up with the times!
+===
+
+title: NPC1PhotoExplanation1
+tags:
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Trixie: Oh, yes, of course! My hair has grown longer since then. It's just a little change, but it's still me, I assure you!
+===

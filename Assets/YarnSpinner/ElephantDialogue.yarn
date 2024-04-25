@@ -1,0 +1,14 @@
+title: ElephantDialogue
+---
+<<declare $elephantSuccess = false>>
+
+Elephant: Hello librarian! I am a little lost here...
+-> How can I help?
+Elephant: I'm trying to get to the "N" shelf, do you know where that is?
+-> Top left of the library!
+-> To the bottom right of the library!
+-> Top middle is where you should go!
+    <<set $elephantSuccess to true>>
+-> You'll find it on the middle of the right side.
+Elephant: Thanks for the help!
+===

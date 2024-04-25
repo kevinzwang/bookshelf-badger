@@ -1,0 +1,136 @@
+﻿title: NPC3NameReal
+tags:
+position: 236,-71
+---
+Berry: Oh, hello there, sweetie! Can you tell me your name, please?
+Maybe Ellie: Hi! I'm Ellie Phant! What's your name?
+Berry: I'm Berry! It's super nice to meet you, Ellie! Now, do you know where your parents are, sweetie?
+Maybe Ellie: Yeah! They're over there by the library, looking at books!
+Berry: Awesome! Thanks, Ellie! Let's get you all sorted out with your library card, okay?
+===
+
+title: NPC3AddyReal
+tags:
+position: -208,41
+---
+Berry: So, Ellie, could you tell me where you live, including the street number and city?
+Maybe Ellie: I think mommy said that I live at 680 Stomp Lane in Trumpet Town!
+===
+
+title: NPC3GenreReal
+tags:
+position: 240,200
+---
+Berry: Now, Ellie, what kinds of books do you like to read?
+Maybe Ellie: I love stories about fantasy and adventures!
+===
+
+title: NPC3BookReal
+tags:
+position: -60,193
+---
+Berry: Ellie, is there a special book that you really, really like?
+Maybe Ellie: Yes! "The Wonderful Wizard of Paws" is my absolute favorite! It's about friendship, bravery, and the most amazingest journey through a magical land called paws!
+===
+
+title: NPC3PhotoReal
+tags:
+position: -36,-163
+---
+Berry: Ellie, I noticed your picture looks a bit different from how you look now. Can you tell me about that?
+Maybe Ellie: Oh, I've grown a bit since that picture! Mommy said if I keep growing at this rate I'll even be taller than daddy soon!
+===
+
+title: NPC3NameFake
+tags:
+position: 236,-71
+---
+Berry: Oh, hey there! Can you tell me your name, please?
+Maybe Ellie: Oh, um, my name? Well, it's, uh, Ellie Phant. Yep, Ellie Phant, ha ha. You know how us Elephants are, we tend to forget things! Too much on our minds with all the trampling and trumpeting, you know?
+===
+
+title: NPC3AddyFake
+tags:
+position: -208,41
+---
+Berry: So, Ellie, could you tell me where you live, including the street number and city?
+Maybe Ellie: Address? Oh, uh, well, I don't really have a fixed one, you see. Elephants like me, we tend to, uh, move with the wind, roam wherever our big ol' feet take us. 
+===
+
+title: NPC3GenreFake
+tags:
+position: 240,200
+---
+Berry: Now, Ellie, what kinds of books do you like to read?
+Maybe Ellie: I, um, like books... about, um, magical stuff?
+===
+
+title: NPC3BookFake
+tags:
+position: -60,193
+---
+Berry: Ellie, is there a special book that you really, really like?
+Maybe Ellie: Uh, yeah! I, um, love "The Wonderful Magician of Tails"... or was it "The Wonderful Wizard of Paws"... It's, um, so great... 
+===
+
+title: NPC3PhotoFake
+tags:
+position: -36,-163
+---
+Berry: Ellie, I noticed your picture looks a bit different from how you look now. Can you tell me about that?
+Maybe Ellie: Um, yeah, well, um, I got, uh, longer hair now... and, um, I got taller, so... yeah.
+===
+
+title: NPC3NameFake1
+tags:
+position: 236,-71
+---
+Berry: Oh, hey there! Can you tell me your name, please?
+Maybe Ellie: Oh, um, my name? Well, it's, uh, Ellie Phant. Yep, Ellie Phant, ha ha. You know how us Elephants are, we tend to forget things! Too much on our minds with all the trampling and trumpeting, you know?
+===
+
+title: NPC3AddyFake1
+tags:
+position: -208,41
+---
+Berry: So, Ellie, could you tell me where you live, including the street number and city?
+Maybe Ellie: Address? Oh, uh, well, I don't really have a fixed one, you see. Elephants like me, we tend to, uh, move with the wind, roam wherever our big ol' feet take us. 
+===
+
+title: NPC3GenreFake1
+tags:
+position: 240,200
+---
+Berry: Now, Ellie, what kinds of books do you like to read?
+Maybe Ellie: I, um, like books... about, um, magical stuff?
+===
+
+title: NPC3BookFake1
+tags:
+position: -60,193
+---
+Berry: Ellie, is there a special book that you really, really like?
+Maybe Ellie: Uh, yeah! I, um, love "The Wonderful Magician of Tails"... or was it "The Wonderful Wizard of Paws"... It's, um, so great... 
+===
+
+title: NPC3PhotoFake1
+tags:
+position: -36,-163
+---
+Berry: Ellie, I noticed your picture looks a bit different from how you look now. Can you tell me about that?
+Maybe Ellie: Ah, yes, about that... You see, I've, uh, aged a bit since that photo was taken. And, um, these glasses are new, you know, for the, uh, reading. Oh, and this beard? Well, that's just, uh, a new fashion statement, you know, gives me that, um, distinguished look.
+===
+
+title: NPC3PhotoExplanation
+tags:
+---
+Berry: Ellie, I noticed your picture looks a bit different from how you look now. Can you tell me about that?
+Maybe Ellie: Oh, yeah! My hair's grown longer since that picture! Isn't it cool? It's like I'm getting big and stuff!
+===
+
+title: NPC3PhotoExplanation1
+tags:
+---
+Berry: There appears to be a discrepancy between your current appearance and the photograph provided on your identification. Could you provide some clarification regarding this matter?
+Maybe Ellie: Ah, yes, about that... You see, I've, uh, aged a bit since that photo was taken. And, um, these glasses are new, you know, for the, uh, reading. Oh, and this beard? Well, that's just, uh, a new fashion statement, you know, gives me that, um, distinguished look.
+===
