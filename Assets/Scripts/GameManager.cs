@@ -54,29 +54,29 @@ public class GameManager : MonoBehaviour
         public string title;
         public string author;
         public string authorLetter;
-        public Color color;
+        public int variant;
 
-        public Book(string title, string author, string authorLetter, Color color) {
+        public Book(string title, string author, string authorLetter, int variant) {
             this.title = title;
             this.author = author;
             this.authorLetter = authorLetter;
-            this.color = color;
+            this.variant = variant;
         }
     }
 
     Book[] books = {
-        new Book("Moby Duck", "Herman Mallard", "M", Color.red),
-        new Book("Pride and Prejufish", "Jane Austail", "A", Color.blue),
-        new Book("A Tale of Two Squirrels", "Charles Dickensquirrel", "D", Color.green),
-        new Book("Ant Gone", "Slothocles", "S", Color.cyan),
-        new Book("The Fault in Our Starfish", "Jelly Green", "G", Color.grey),
-        new Book("The Rabbit", "GRR Tolkien", "T", Color.yellow),
-        new Book("A Tail of Two Kitties", "Charles Chickens", "C", Color.green),
-        new Book("Harry Otter and the Chamber of Fish", "J. K. Roly-Poly", "R", Color.magenta),
-        new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", Color.red),
-        new Book("Raccooneo and Jackalette", "Walrus Shakespeare", "S", Color.blue),
-        new Book("The Wonderful Wizard of Paws", " L. Frank Clawm", "C", Color.green),
-        new Book("War and Fleece", "Leo Toadstoy", "T", Color.yellow)
+        new Book("Moby Duck", "Herman Mallard", "M", 0),
+        new Book("Pride and Prejufish", "Jane Austail", "A", 1),
+        new Book("A Tale of Two Squirrels", "Charles Dickensquirrel", "D", 2),
+        new Book("Ant Gone", "Slothocles", "S", 3),
+        new Book("The Fault in Our Starfish", "Jelly Green", "G", 1),
+        new Book("The Rabbit", "GRR Tolkien", "T", 0),
+        new Book("A Tail of Two Kitties", "Charles Chickens", "C", 3),
+        new Book("Harry Otter and the Chamber of Fish", "J. K. Roly-Poly", "R", 2),
+        new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", 0),
+        new Book("Raccooneo and Jackalette", "Walrus Shakespeare", "S", 3),
+        new Book("The Wonderful Wizard of Paws", " L. Frank Clawm", "C", 2),
+        new Book("War and Fleece", "Leo Toadstoy", "T", 1)
     };
     int bookIndex = 0;
 
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
         if (currentBook == null) return;
 
         bookUI.SetActive(true);
-        bookUI.GetComponent<Image>().color = currentBook.color;
+        // bookUI.GetComponent<Image>().color = currentBook.color;
         bookUI.transform.Find("Title").GetComponent<TMP_Text>().text = currentBook.title;
         bookUI.transform.Find("Author").GetComponent<TMP_Text>().text = currentBook.author;
     }

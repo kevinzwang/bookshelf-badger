@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShelveBook : MonoBehaviour
 {
     GameManager gameManager;
+    public BookToShelve book;
 
     private void Awake()
     {
@@ -12,8 +13,6 @@ public class ShelveBook : MonoBehaviour
     }
 
     void OnMouseDown() {
-        gameManager.AddScore(1);
-        gameManager.DropBook();
-        gameManager.ExitMiniGame();
+        book.Shelve();
     }
 }
