@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
         new Book("The Great Catsby", "F. Scott Fuzzgerald", "F", 0, true), // elephant convo
         new Book("Raccooneo and Jackalette", "Walrus Shakespeare", "S", 3),
         new Book("The Wonderful Wizard of Paws", " L. Frank Clawm", "C", 2, true), // cat card
-        new Book("War and Fleece", "Leo Toadstoy", "T", 1)
+        new Book("War and Fleece", "Leo Toadstoy", "T", 1, true), // elephant card
     };
     int bookIndex = 0;
 

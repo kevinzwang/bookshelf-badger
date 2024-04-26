@@ -44,7 +44,7 @@ public class CardCat : MonoBehaviour
         regularNPC.SetActive(true);
 
         gameManager.SetPatron("cat");
-        gameManager.EnterMiniGame("MinigamePrinter");
+        gameManager.EnterMiniGame("MinigameCard");
     }
 
 }

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardBird : MonoBehaviour
+public class CardElephant : MonoBehaviour
 {
-    private static CardBird instance;
+    private static CardElephant instance;
     
     GameManager gameManager;
     SpriteRenderer spriteRenderer;
@@ -31,7 +31,6 @@ public class CardBird : MonoBehaviour
         regularNPC.SetActive(false);
     }
 
-
     void OnMouseEnter() {
         spriteRenderer.color = Color.green;
     }
@@ -44,7 +43,7 @@ public class CardBird : MonoBehaviour
         gameObject.SetActive(false);
         regularNPC.SetActive(true);
 
-        gameManager.SetPatron("bird");
+        gameManager.SetPatron("elephant");
         gameManager.EnterMiniGame("MinigameCard");
     }
 
