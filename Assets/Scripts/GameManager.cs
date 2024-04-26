@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     int interactIndex = -1;
     public GameObject[] regularNPCs;
     
-    bool[] activeNPCs = { false, false, false, false, false, false };
+    bool[] activeNPCs = { false, false, false, false, false, false, false };
 
     public class Book {
         public string title;
@@ -131,8 +131,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(.2f);
 
         GameObject canvas = GameObject.Find("Canvas");
-        GameObject starCount = canvas.transform.Find("StarCount").gameObject;
-        TMP_Text starText = starCount.GetComponent<TextMeshProUGUI>();
+        Debug.Log("Canvas: " + canvas);
+        // GameObject starCount = canvas.transform.Find("StarCount").gameObject;
+        TMP_Text starText = canvas.GetComponentInChildren<TextMeshProUGUI>(); // starCount.GetComponent<TextMeshProUGUI>();
+        Debug.Log("Star Text: " + starText);
 
         for (int i = 1; i <= 10; i++) {
             starText.text = i.ToString();

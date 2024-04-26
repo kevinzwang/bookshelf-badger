@@ -27,9 +27,10 @@ public class Clock : MonoBehaviour
         if (timeElapsed >= totalTimeSecs)
         {
             gameManager.EndGame();
+            Destroy(gameObject);
         }
         
-        int secondsLeft = (int)(totalTimeSecs - Math.Ceiling(timeElapsed));
+        int secondsLeft = (int)(totalTimeSecs - Math.Floor(timeElapsed));
         
         int min = secondsLeft / 60;
         int sec = secondsLeft % 60;
