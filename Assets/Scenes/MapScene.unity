@@ -5387,6 +5387,34 @@ PrefabInstance:
       propertyPath: startNode
       value: ElephantDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 944203812}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueElephant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3935751874833286055, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6359,6 +6387,34 @@ PrefabInstance:
       propertyPath: startNode
       value: BirdDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1768554518}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueBird, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3935751874833286055, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6593,6 +6649,34 @@ PrefabInstance:
     - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
       propertyPath: startNode
       value: CatDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 764834500}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueCat, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106973923969825188, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3935751874833286055, guid: 9cef843d6cf8afb418051e4af94c5e11, type: 3}
       propertyPath: m_LocalPosition.x
