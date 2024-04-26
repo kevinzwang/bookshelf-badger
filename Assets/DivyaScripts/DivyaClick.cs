@@ -50,7 +50,6 @@ public class DivyaClick : MonoBehaviour
                 checkButton.SetActive(true);
                 Xbutton.SetActive(false);
                 win3 = true;
-                Debug.Log("win3");
             }
         } else {
             passwordProgress = 1;

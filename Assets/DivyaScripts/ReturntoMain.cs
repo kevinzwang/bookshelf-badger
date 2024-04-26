@@ -14,7 +14,10 @@ public class ReturntoMain : MonoBehaviour
 
     public void Return() 
     {
+        if (PrinterManager.win) {
+            gameManager.AddScore(1);
+        }
+
         gameManager.ExitMiniGame();
-        gameManager.AddScore(1);
     }
 }

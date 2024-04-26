@@ -19,6 +19,7 @@ public class PrinterManager : MonoBehaviour
     private CartManager script2;
     private DivyaClick script3;
     public GameObject printerbody;
+    public static bool win;
 
 
     void Start()
@@ -30,6 +31,7 @@ public class PrinterManager : MonoBehaviour
         // Debug.Log(script1.win1);
         // Debug.Log(script2.win2);
         // Debug.Log(script3.win3);
+        win = false;
 
 
 
@@ -38,9 +40,9 @@ public class PrinterManager : MonoBehaviour
     void Update()
     {
         if (DivyaClick.win3 && CartManager.win2 && PaperManager.win1) {
-            Debug.Log("Win");
             printerbody.SetActive(false);
             animatedPrinter.SetActive(true);
+            win = true;
         }
     }
 
