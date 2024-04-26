@@ -130,13 +130,11 @@ public class GameManager : MonoBehaviour
     IEnumerator AddScoreRoutine() {
         yield return new WaitForSeconds(.2f);
 
-        GameObject canvas = GameObject.Find("Canvas");
-        Debug.Log("Canvas: " + canvas);
-        // GameObject starCount = canvas.transform.Find("StarCount").gameObject;
-        TMP_Text starText = canvas.GetComponentInChildren<TextMeshProUGUI>(); // starCount.GetComponent<TextMeshProUGUI>();
-        Debug.Log("Star Text: " + starText);
+        GameObject canvas = GameObject.Find("EndCanvas");
+        GameObject starCount = canvas.transform.Find("StarCount").gameObject;
+        TMP_Text starText = starCount.GetComponent<TextMeshProUGUI>();
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= score; i++) {
             starText.text = i.ToString();
             yield return new WaitForSeconds(.1f);
         }
