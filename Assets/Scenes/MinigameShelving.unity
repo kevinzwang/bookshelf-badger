@@ -9145,9 +9145,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   bookUI: {fileID: 0}
-  levelText: {fileID: 0}
-  levelSlider: {fileID: 0}
-  levelScores: 00000000050000000f0000001e000000
+  bookInHand: {fileID: 0}
+  scoreText: {fileID: 0}
+  tutorial: {fileID: 0}
+  bookCovers: []
+  interactOrder: []
+  regularNPCs: []
 --- !u!4 &1027160356
 Transform:
   m_ObjectHideFlags: 0
@@ -18471,7 +18474,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869194651}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1869194653
 Camera:
   m_ObjectHideFlags: 0
