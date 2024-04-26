@@ -14,7 +14,7 @@ public class EndScene : MonoBehaviour
 
     public void Return() 
     {
-        gameManager.ExitMiniGame();
         gameManager.AddScore(1);
+        gameManager.ExitMiniGame();
     }
 }
