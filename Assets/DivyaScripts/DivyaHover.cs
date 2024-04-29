@@ -17,7 +17,7 @@ public class DivyaHover : MonoBehaviour
         if (gameObject.tag == "key") {
             gameObject.GetComponent<SpriteRenderer>().color = Color.green;
         } else {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
         }
         // if its a main item turn green
         //else turn red
