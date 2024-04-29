@@ -7,6 +7,7 @@ public class PrinterManager : MonoBehaviour
     
 
     public GameObject animatedPrinter;
+    public GameObject printerDialogue;
     private Animator animator;
     private PaperManager script1;
     private CartManager script2;
@@ -18,7 +19,7 @@ public class PrinterManager : MonoBehaviour
     void Start()
     { 
         win = false;
-
+        
 
 
     }

@@ -2084,6 +2084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedPrinter: {fileID: 2037044675}
+  printerDialogue: {fileID: 0}
   printerbody: {fileID: 1599519615}
 --- !u!1 &634223319
 GameObject:
@@ -3986,7 +3987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -750.2075, y: -48.767563}
+  m_AnchoredPosition: {x: -762, y: -39.441}
   m_SizeDelta: {x: 42.4252, y: 50.9275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065483855
