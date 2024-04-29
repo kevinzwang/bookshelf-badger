@@ -44,6 +44,9 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Variables
+
+    public GameObject mapCanvas;
+    public GameObject mapCamera;
     public GameObject player;
     public GameObject bookUI;
     public GameObject bookInHand;
@@ -123,6 +126,8 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < regularNPCs.Length; i++) {
             Destroy(regularNPCs[i]);
         }
+        Destroy(mapCanvas);
+        Destroy(mapCamera);
         SceneManager.LoadScene("MainMenuScene");
         Destroy(gameObject);
     }

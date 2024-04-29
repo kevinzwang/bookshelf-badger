@@ -184,6 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2674c43c0704a418957a9aa08a0950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCanvas: {fileID: 370746205}
+  mapCamera: {fileID: 1856444810}
   player: {fileID: 903023028}
   bookUI: {fileID: 2133553909}
   bookInHand: {fileID: 1355768097}
@@ -2451,7 +2453,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2000134, y: -26.969364, z: -10}
+  m_LocalPosition: {x: 1.2000086, y: -26.969364, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18911,7 +18913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01eba36e9aabb46d4aa9848b7692e284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTimeSecs: 300
+  totalTimeSecs: 480
 --- !u!114 &2136400155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18932,7 +18934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0:00
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b602f95e8b298894c9ab65e186da1895, type: 2}
   m_sharedMaterial: {fileID: 8888440778596505402, guid: b602f95e8b298894c9ab65e186da1895, type: 2}
